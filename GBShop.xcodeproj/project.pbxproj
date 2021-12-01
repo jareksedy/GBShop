@@ -14,6 +14,26 @@
 		CA2824972751E3F00097488F /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824962751E3F00097488F /* GBShopTests.swift */; };
 		CA2824A12751E3F00097488F /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A02751E3F00097488F /* GBShopUITests.swift */; };
 		CA2824A32751E3F00097488F /* GBShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */; };
+		CA347ED7275771E2001BAEC1 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347ED6275771E2001BAEC1 /* Signup.swift */; };
+		CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */; };
+		CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */; };
+		CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */; };
+		CAD485072757330D00F2D941 /* GBShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD485062757330D00F2D941 /* GBShop.storyboard */; };
+		CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485082757376F00F2D941 /* GBShopViewController.swift */; };
+		CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */; };
+		CAD4850F2757447600F2D941 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CAD4850E2757447600F2D941 /* Alamofire */; };
+		CAD485112757480200F2D941 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485102757480100F2D941 /* ErrorParser.swift */; };
+		CAD485132757482300F2D941 /* ResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485122757482300F2D941 /* ResponseCodable.swift */; };
+		CAD485152757485000F2D941 /* AbstractRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485142757485000F2D941 /* AbstractRequestFactory.swift */; };
+		CAD485172757487600F2D941 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485162757487600F2D941 /* RequestRouter.swift */; };
+		CAD4851A2757492200F2D941 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485192757492200F2D941 /* AuthRequestFactory.swift */; };
+		CAD4851C2757494100F2D941 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4851B2757494100F2D941 /* Auth.swift */; };
+		CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4851D2757494C00F2D941 /* RequestFactory.swift */; };
+		CAD485202757497700F2D941 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4851F2757497700F2D941 /* LoginResult.swift */; };
+		CAD485222757499900F2D941 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485212757499900F2D941 /* User.swift */; };
+		CAD4852427576B2900F2D941 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4852327576B2900F2D941 /* LogoutResult.swift */; };
+		CAD4852627576E3D00F2D941 /* SignupResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4852527576E3D00F2D941 /* SignupResult.swift */; };
+		CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4852727576F1500F2D941 /* SignupRequestFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +65,25 @@
 		CA28249C2751E3F00097488F /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2824A02751E3F00097488F /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA347ED6275771E2001BAEC1 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataResult.swift; sourceTree = "<group>"; };
+		CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
+		CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
+		CAD485062757330D00F2D941 /* GBShop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GBShop.storyboard; sourceTree = "<group>"; };
+		CAD485082757376F00F2D941 /* GBShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopViewController.swift; sourceTree = "<group>"; };
+		CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
+		CAD485102757480100F2D941 /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
+		CAD485122757482300F2D941 /* ResponseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodable.swift; sourceTree = "<group>"; };
+		CAD485142757485000F2D941 /* AbstractRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractRequestFactory.swift; sourceTree = "<group>"; };
+		CAD485162757487600F2D941 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		CAD485192757492200F2D941 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
+		CAD4851B2757494100F2D941 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		CAD4851D2757494C00F2D941 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		CAD4851F2757497700F2D941 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		CAD485212757499900F2D941 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CAD4852327576B2900F2D941 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
+		CAD4852527576E3D00F2D941 /* SignupResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResult.swift; sourceTree = "<group>"; };
+		CAD4852727576F1500F2D941 /* SignupRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequestFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD4850F2757447600F2D941 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +160,32 @@
 			path = GBShopUITests;
 			sourceTree = "<group>";
 		};
+		CAD4850A275743C000F2D941 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */,
+				CAD485102757480100F2D941 /* ErrorParser.swift */,
+				CAD485122757482300F2D941 /* ResponseCodable.swift */,
+				CAD485142757485000F2D941 /* AbstractRequestFactory.swift */,
+				CAD485162757487600F2D941 /* RequestRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CAD48518275748D000F2D941 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CAD485192757492200F2D941 /* AuthRequestFactory.swift */,
+				CAD4852727576F1500F2D941 /* SignupRequestFactory.swift */,
+				CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */,
+				CAD4851B2757494100F2D941 /* Auth.swift */,
+				CA347ED6275771E2001BAEC1 /* Signup.swift */,
+				CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */,
+				CAD4851D2757494C00F2D941 /* RequestFactory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		CAE4C8E42751F92A00D97D2B /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +202,7 @@
 		CAE4C8E52751F93C00D97D2B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CAD4850A275743C000F2D941 /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -160,6 +227,7 @@
 		CAE4C8E82751F97200D97D2B /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				CAD48518275748D000F2D941 /* Network */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -167,6 +235,11 @@
 		CAE4C8E92751F97E00D97D2B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				CAD4851F2757497700F2D941 /* LoginResult.swift */,
+				CAD4852327576B2900F2D941 /* LogoutResult.swift */,
+				CAD4852527576E3D00F2D941 /* SignupResult.swift */,
+				CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */,
+				CAD485212757499900F2D941 /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -181,6 +254,8 @@
 		CAE4C8EB2751F99400D97D2B /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				CAD485062757330D00F2D941 /* GBShop.storyboard */,
+				CAD485082757376F00F2D941 /* GBShopViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -201,6 +276,9 @@
 			dependencies = (
 			);
 			name = GBShop;
+			packageProductDependencies = (
+				CAD4850E2757447600F2D941 /* Alamofire */,
+			);
 			productName = GBShop;
 			productReference = CA28247C2751E3EF0097488F /* GBShop.app */;
 			productType = "com.apple.product-type.application";
@@ -273,6 +351,9 @@
 				Base,
 			);
 			mainGroup = CA2824732751E3EF0097488F;
+			packageReferences = (
+				CAD4850D2757447600F2D941 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CA28247D2751E3EF0097488F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD485072757330D00F2D941 /* GBShop.storyboard in Resources */,
 				CA28248C2751E3F00097488F /* LaunchScreen.storyboard in Resources */,
 				CA2824892751E3F00097488F /* Assets.xcassets in Resources */,
 			);
@@ -315,8 +397,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD485222757499900F2D941 /* User.swift in Sources */,
+				CAD485202757497700F2D941 /* LoginResult.swift in Sources */,
+				CAD4852427576B2900F2D941 /* LogoutResult.swift in Sources */,
+				CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */,
+				CAD485172757487600F2D941 /* RequestRouter.swift in Sources */,
+				CAD485152757485000F2D941 /* AbstractRequestFactory.swift in Sources */,
+				CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */,
+				CAD485112757480200F2D941 /* ErrorParser.swift in Sources */,
+				CAD485132757482300F2D941 /* ResponseCodable.swift in Sources */,
+				CA347ED7275771E2001BAEC1 /* Signup.swift in Sources */,
 				CA2824802751E3EF0097488F /* AppDelegate.swift in Sources */,
+				CAD4852627576E3D00F2D941 /* SignupResult.swift in Sources */,
+				CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */,
+				CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */,
+				CAD4851C2757494100F2D941 /* Auth.swift in Sources */,
+				CAD4851A2757492200F2D941 /* AuthRequestFactory.swift in Sources */,
+				CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */,
+				CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */,
 				CA2824822751E3EF0097488F /* SceneDelegate.swift in Sources */,
+				CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +770,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAD4850D2757447600F2D941 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAD4850E2757447600F2D941 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAD4850D2757447600F2D941 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA2824742751E3EF0097488F /* Project object */;
 }
