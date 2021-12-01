@@ -27,6 +27,7 @@
 		CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4851D2757494C00F2D941 /* RequestFactory.swift */; };
 		CAD485202757497700F2D941 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4851F2757497700F2D941 /* LoginResult.swift */; };
 		CAD485222757499900F2D941 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485212757499900F2D941 /* User.swift */; };
+		CAD4852427576B2900F2D941 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4852327576B2900F2D941 /* LogoutResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		CAD4851D2757494C00F2D941 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		CAD4851F2757497700F2D941 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		CAD485212757499900F2D941 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CAD4852327576B2900F2D941 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				CAD4851F2757497700F2D941 /* LoginResult.swift */,
+				CAD4852327576B2900F2D941 /* LogoutResult.swift */,
 				CAD485212757499900F2D941 /* User.swift */,
 			);
 			path = Entity;
@@ -378,6 +381,7 @@
 			files = (
 				CAD485222757499900F2D941 /* User.swift in Sources */,
 				CAD485202757497700F2D941 /* LoginResult.swift in Sources */,
+				CAD4852427576B2900F2D941 /* LogoutResult.swift in Sources */,
 				CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */,
 				CAD485172757487600F2D941 /* RequestRouter.swift in Sources */,
 				CAD485152757485000F2D941 /* AbstractRequestFactory.swift in Sources */,

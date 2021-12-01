@@ -15,14 +15,29 @@ class GBShopViewController: UIViewController {
         super.viewDidLoad()
         
         makeAuthRequest()
+        makeLogoutRequest()
     }
     
     // MARK: - Test methods.
     
     func makeAuthRequest() {
-        let auth = requestFactory.makeAuthRequestFatory()
+        let factory = requestFactory.makeAuthRequestFactory()
         
-        auth.login(userName: "Somebody", password: "mypassword") { response in
+        factory.login(userName: "Somebody", password: "mypassword") { response in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func makeLogoutRequest() {
+        let factory = requestFactory.makeAuthRequestFactory()
+        let user = User(id: 123, login: "Somebody", name: "John", lastname: "Doe")
+        
+        factory.logout(user: user) { response in
             switch response.result {
             case .success(let login):
                 print(login)
