@@ -15,6 +15,9 @@
 		CA2824A12751E3F00097488F /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A02751E3F00097488F /* GBShopUITests.swift */; };
 		CA2824A32751E3F00097488F /* GBShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */; };
 		CA347ED7275771E2001BAEC1 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347ED6275771E2001BAEC1 /* Signup.swift */; };
+		CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */; };
+		CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */; };
+		CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */; };
 		CAD485072757330D00F2D941 /* GBShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD485062757330D00F2D941 /* GBShop.storyboard */; };
 		CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485082757376F00F2D941 /* GBShopViewController.swift */; };
 		CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */; };
@@ -63,6 +66,9 @@
 		CA2824A02751E3F00097488F /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA347ED6275771E2001BAEC1 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataResult.swift; sourceTree = "<group>"; };
+		CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
+		CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
 		CAD485062757330D00F2D941 /* GBShop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GBShop.storyboard; sourceTree = "<group>"; };
 		CAD485082757376F00F2D941 /* GBShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopViewController.swift; sourceTree = "<group>"; };
 		CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
@@ -171,8 +177,10 @@
 			children = (
 				CAD485192757492200F2D941 /* AuthRequestFactory.swift */,
 				CAD4852727576F1500F2D941 /* SignupRequestFactory.swift */,
+				CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */,
 				CAD4851B2757494100F2D941 /* Auth.swift */,
 				CA347ED6275771E2001BAEC1 /* Signup.swift */,
+				CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */,
 				CAD4851D2757494C00F2D941 /* RequestFactory.swift */,
 			);
 			path = Network;
@@ -230,6 +238,7 @@
 				CAD4851F2757497700F2D941 /* LoginResult.swift */,
 				CAD4852327576B2900F2D941 /* LogoutResult.swift */,
 				CAD4852527576E3D00F2D941 /* SignupResult.swift */,
+				CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */,
 				CAD485212757499900F2D941 /* User.swift */,
 			);
 			path = Entity;
@@ -394,11 +403,14 @@
 				CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */,
 				CAD485172757487600F2D941 /* RequestRouter.swift in Sources */,
 				CAD485152757485000F2D941 /* AbstractRequestFactory.swift in Sources */,
+				CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */,
 				CAD485112757480200F2D941 /* ErrorParser.swift in Sources */,
 				CAD485132757482300F2D941 /* ResponseCodable.swift in Sources */,
 				CA347ED7275771E2001BAEC1 /* Signup.swift in Sources */,
 				CA2824802751E3EF0097488F /* AppDelegate.swift in Sources */,
 				CAD4852627576E3D00F2D941 /* SignupResult.swift in Sources */,
+				CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */,
+				CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */,
 				CAD4851C2757494100F2D941 /* Auth.swift in Sources */,
 				CAD4851A2757492200F2D941 /* AuthRequestFactory.swift in Sources */,
 				CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */,
