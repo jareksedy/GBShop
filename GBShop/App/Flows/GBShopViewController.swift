@@ -35,7 +35,7 @@ class GBShopViewController: UIViewController {
     
     func makeLogoutRequest() {
         let factory = requestFactory.makeAuthRequestFactory()
-        let user = User(id: 123, login: "Somebody", name: "John", lastname: "Doe")
+        let user = User(id: 123, login: nil, name: nil, lastname: nil)
         
         factory.logout(user: user) { response in
             switch response.result {
