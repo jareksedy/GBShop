@@ -16,6 +16,8 @@
 		CA2824A32751E3F00097488F /* GBShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */; };
 		CAD485072757330D00F2D941 /* GBShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD485062757330D00F2D941 /* GBShop.storyboard */; };
 		CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485082757376F00F2D941 /* GBShopViewController.swift */; };
+		CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */; };
+		CAD4850F2757447600F2D941 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CAD4850E2757447600F2D941 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAD485062757330D00F2D941 /* GBShop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GBShop.storyboard; sourceTree = "<group>"; };
 		CAD485082757376F00F2D941 /* GBShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopViewController.swift; sourceTree = "<group>"; };
+		CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD4850F2757447600F2D941 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +128,14 @@
 			path = GBShopUITests;
 			sourceTree = "<group>";
 		};
+		CAD4850A275743C000F2D941 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		CAE4C8E42751F92A00D97D2B /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +152,7 @@
 		CAE4C8E52751F93C00D97D2B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CAD4850A275743C000F2D941 /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -207,6 +220,9 @@
 			dependencies = (
 			);
 			name = GBShop;
+			packageProductDependencies = (
+				CAD4850E2757447600F2D941 /* Alamofire */,
+			);
 			productName = GBShop;
 			productReference = CA28247C2751E3EF0097488F /* GBShop.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +295,9 @@
 				Base,
 			);
 			mainGroup = CA2824732751E3EF0097488F;
+			packageReferences = (
+				CAD4850D2757447600F2D941 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CA28247D2751E3EF0097488F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -325,6 +344,7 @@
 				CA2824802751E3EF0097488F /* AppDelegate.swift in Sources */,
 				CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */,
 				CA2824822751E3EF0097488F /* SceneDelegate.swift in Sources */,
+				CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +698,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAD4850D2757447600F2D941 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAD4850E2757447600F2D941 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAD4850D2757447600F2D941 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA2824742751E3EF0097488F /* Project object */;
 }
