@@ -28,8 +28,8 @@ class GBShopViewController: UIViewController {
         
         factory.login(user: user) { response in
             switch response.result {
-            case .success(let login):
-                print(login)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -49,8 +49,8 @@ class GBShopViewController: UIViewController {
         
         factory.signup(user: user) { response in
             switch response.result {
-            case .success(let user):
-                print(user)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -71,8 +71,8 @@ class GBShopViewController: UIViewController {
         
         factory.changeUserData(user: user) { response in
             switch response.result {
-            case .success(let user):
-                print(user)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -85,8 +85,8 @@ class GBShopViewController: UIViewController {
         
         factory.logout(user: user) { response in
             switch response.result {
-            case .success(let login):
-                print(login)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }
