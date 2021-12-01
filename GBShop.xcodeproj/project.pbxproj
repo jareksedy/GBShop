@@ -14,6 +14,7 @@
 		CA2824972751E3F00097488F /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824962751E3F00097488F /* GBShopTests.swift */; };
 		CA2824A12751E3F00097488F /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A02751E3F00097488F /* GBShopUITests.swift */; };
 		CA2824A32751E3F00097488F /* GBShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */; };
+		CAD485072757330D00F2D941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD485062757330D00F2D941 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		CA28249C2751E3F00097488F /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2824A02751E3F00097488F /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAD485062757330D00F2D941 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				CA2824882751E3F00097488F /* Assets.xcassets */,
+				CAD485062757330D00F2D941 /* Main.storyboard */,
 				CA28248A2751E3F00097488F /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -289,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD485072757330D00F2D941 /* Main.storyboard in Resources */,
 				CA28248C2751E3F00097488F /* LaunchScreen.storyboard in Resources */,
 				CA2824892751E3F00097488F /* Assets.xcassets in Resources */,
 			);
