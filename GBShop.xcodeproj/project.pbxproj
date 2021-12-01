@@ -15,6 +15,7 @@
 		CA2824A12751E3F00097488F /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A02751E3F00097488F /* GBShopUITests.swift */; };
 		CA2824A32751E3F00097488F /* GBShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */; };
 		CAD485072757330D00F2D941 /* GBShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD485062757330D00F2D941 /* GBShop.storyboard */; };
+		CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485082757376F00F2D941 /* GBShopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CA2824A02751E3F00097488F /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAD485062757330D00F2D941 /* GBShop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GBShop.storyboard; sourceTree = "<group>"; };
+		CAD485082757376F00F2D941 /* GBShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				CA2824882751E3F00097488F /* Assets.xcassets */,
-				CAD485062757330D00F2D941 /* GBShop.storyboard */,
 				CA28248A2751E3F00097488F /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -184,6 +185,8 @@
 		CAE4C8EB2751F99400D97D2B /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				CAD485062757330D00F2D941 /* GBShop.storyboard */,
+				CAD485082757376F00F2D941 /* GBShopViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2824802751E3EF0097488F /* AppDelegate.swift in Sources */,
+				CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */,
 				CA2824822751E3EF0097488F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
