@@ -40,7 +40,7 @@ extension Signup {
         let user: User
         var parameters: Parameters? {
             return [
-                "id_user": user.id,
+                "id_user": user.id ?? 0,
                 "username": user.login ?? "",
                 "password": user.password ?? "",
                 "email": user.email ?? "",
