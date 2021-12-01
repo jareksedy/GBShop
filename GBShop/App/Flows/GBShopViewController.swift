@@ -42,7 +42,7 @@ class GBShopViewController: UIViewController {
                         email: "janedoe@gmail.com",
                         gender: "f",
                         creditCard: "2344-4324-2344-1233-1234",
-                        bio: "Nothin to tell ya really %)",
+                        bio: "Nothin to tell ya folks %)",
                         name: "Jane",
                         lastname: "Doe")
         
