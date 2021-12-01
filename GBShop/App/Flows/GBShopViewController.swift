@@ -15,6 +15,7 @@ class GBShopViewController: UIViewController {
         super.viewDidLoad()
         
         makeAuthRequest()
+        makeSignupRequest()
         makeLogoutRequest()
     }
     
@@ -33,9 +34,39 @@ class GBShopViewController: UIViewController {
         }
     }
     
+    func makeSignupRequest() {
+        let factory = requestFactory.makeSignupRequestFactory()
+        let user = User(id: 666,
+                        login: "SomebodyElse",
+                        password: "mypassword",
+                        email: "janedoe@gmail.com",
+                        gender: "f",
+                        creditCard: "2344-4324-2344-1233-1234",
+                        bio: "Nothin to tell ya really %)",
+                        name: "Jane",
+                        lastname: "Doe")
+        
+        factory.signup(user: user) { response in
+            switch response.result {
+            case .success(let user):
+                print(user)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     func makeLogoutRequest() {
         let factory = requestFactory.makeAuthRequestFactory()
-        let user = User(id: 123, login: nil, name: nil, lastname: nil)
+        let user = User(id: 123,
+                        login: nil,
+                        password: nil,
+                        email: nil,
+                        gender: nil,
+                        creditCard: nil,
+                        bio: nil,
+                        name: nil,
+                        lastname: nil)
         
         factory.logout(user: user) { response in
             switch response.result {
