@@ -10,6 +10,8 @@ import XCTest
 
 class RequestsTests: XCTestCase {
     
+    let timeoutValue = 10.0
+    
     var requestFactory: RequestFactory!
     var user: User!
     
@@ -36,6 +38,7 @@ class RequestsTests: XCTestCase {
 
     func testShouldPerformSignupRequest() {
         let factory = requestFactory.makeSignupRequestFactory()
+        
         factory.signup(user: user) { response in
             switch response.result {
             case .success(let result): XCTAssertEqual(result.result, 1)
@@ -43,11 +46,12 @@ class RequestsTests: XCTestCase {
             }
             self.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: timeoutValue)
     }
     
     func testShouldPerformAuthRequest() {
         let factory = requestFactory.makeAuthRequestFactory()
+        
         factory.login(user: user) { response in
             switch response.result {
             case .success(let result): XCTAssertEqual(result.result, 1)
@@ -55,11 +59,12 @@ class RequestsTests: XCTestCase {
             }
             self.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: timeoutValue)
     }
     
     func testShouldPerformChangeUserDataRequest() {
         let factory = requestFactory.makeChangeUserDataRequestFactory()
+        
         factory.changeUserData(user: user) { response in
             switch response.result {
             case .success(let result): XCTAssertEqual(result.result, 1)
@@ -67,11 +72,12 @@ class RequestsTests: XCTestCase {
             }
             self.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: timeoutValue)
     }
     
     func testShouldPerformLogoutRequest() {
         let factory = requestFactory.makeAuthRequestFactory()
+        
         factory.logout(user: user) { response in
             switch response.result {
             case .success(let result): XCTAssertEqual(result.result, 1)
@@ -79,6 +85,32 @@ class RequestsTests: XCTestCase {
             }
             self.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: timeoutValue)
+    }
+    
+    func testShouldPerformGetCatalogRequest() {
+        let factory = requestFactory.makeGetCatalogRequestFactory()
+        
+        factory.getCatalog(pageNumber: 1, categoryId: 1) { response in
+            switch response.result {
+            case .success: break
+            case .failure: XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
+    }
+    
+    func testShouldPerformGetGoodRequest() {
+        let factory = requestFactory.makeGetGoodRequestFactory()
+        
+        factory.getGood(productId: 123) { response in
+            switch response.result {
+            case .success(let result): XCTAssertEqual(result.result, 1)
+            case .failure: XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
     }
 }
