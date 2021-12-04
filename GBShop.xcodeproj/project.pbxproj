@@ -18,6 +18,7 @@
 		CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */; };
 		CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */; };
 		CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */; };
+		CAD23EC1275B3E9A00A7EFE0 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD23EC0275B3E9A00A7EFE0 /* ResponseCodableTests.swift */; };
 		CAD485072757330D00F2D941 /* GBShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD485062757330D00F2D941 /* GBShop.storyboard */; };
 		CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485082757376F00F2D941 /* GBShopViewController.swift */; };
 		CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */; };
@@ -69,6 +70,7 @@
 		CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataResult.swift; sourceTree = "<group>"; };
 		CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
 		CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
+		CAD23EC0275B3E9A00A7EFE0 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 		CAD485062757330D00F2D941 /* GBShop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GBShop.storyboard; sourceTree = "<group>"; };
 		CAD485082757376F00F2D941 /* GBShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopViewController.swift; sourceTree = "<group>"; };
 		CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CA2824962751E3F00097488F /* GBShopTests.swift */,
+				CAD23EC0275B3E9A00A7EFE0 /* ResponseCodableTests.swift */,
 			);
 			path = GBShopTests;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2824972751E3F00097488F /* GBShopTests.swift in Sources */,
+				CAD23EC1275B3E9A00A7EFE0 /* ResponseCodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
