@@ -11,13 +11,13 @@
 		CA2824822751E3EF0097488F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824812751E3EF0097488F /* SceneDelegate.swift */; };
 		CA2824892751E3F00097488F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2824882751E3F00097488F /* Assets.xcassets */; };
 		CA28248C2751E3F00097488F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA28248A2751E3F00097488F /* LaunchScreen.storyboard */; };
-		CA2824972751E3F00097488F /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824962751E3F00097488F /* GBShopTests.swift */; };
 		CA2824A12751E3F00097488F /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A02751E3F00097488F /* GBShopUITests.swift */; };
 		CA2824A32751E3F00097488F /* GBShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */; };
 		CA347ED7275771E2001BAEC1 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347ED6275771E2001BAEC1 /* Signup.swift */; };
 		CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */; };
 		CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */; };
 		CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */; };
+		CA875849275B77E100C60E07 /* RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875848275B77E100C60E07 /* RequestsTests.swift */; };
 		CAD23EC1275B3E9A00A7EFE0 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD23EC0275B3E9A00A7EFE0 /* ResponseCodableTests.swift */; };
 		CAD485072757330D00F2D941 /* GBShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD485062757330D00F2D941 /* GBShop.storyboard */; };
 		CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485082757376F00F2D941 /* GBShopViewController.swift */; };
@@ -62,7 +62,6 @@
 		CA28248B2751E3F00097488F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA28248D2751E3F00097488F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA2824922751E3F00097488F /* GBShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA2824962751E3F00097488F /* GBShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopTests.swift; sourceTree = "<group>"; };
 		CA28249C2751E3F00097488F /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2824A02751E3F00097488F /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		CA2824A22751E3F00097488F /* GBShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataResult.swift; sourceTree = "<group>"; };
 		CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
 		CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
+		CA875848275B77E100C60E07 /* RequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTests.swift; sourceTree = "<group>"; };
 		CAD23EC0275B3E9A00A7EFE0 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 		CAD485062757330D00F2D941 /* GBShop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GBShop.storyboard; sourceTree = "<group>"; };
 		CAD485082757376F00F2D941 /* GBShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopViewController.swift; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		CA2824952751E3F00097488F /* GBShopTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA2824962751E3F00097488F /* GBShopTests.swift */,
 				CAD23EC0275B3E9A00A7EFE0 /* ResponseCodableTests.swift */,
+				CA875848275B77E100C60E07 /* RequestsTests.swift */,
 			);
 			path = GBShopTests;
 			sourceTree = "<group>";
@@ -427,8 +427,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2824972751E3F00097488F /* GBShopTests.swift in Sources */,
 				CAD23EC1275B3E9A00A7EFE0 /* ResponseCodableTests.swift in Sources */,
+				CA875849275B77E100C60E07 /* RequestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

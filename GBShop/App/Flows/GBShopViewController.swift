@@ -20,7 +20,7 @@ class GBShopViewController: UIViewController {
         makeLogoutRequest()
     }
     
-    // MARK: - Test methods.
+    // MARK: - Methods for testing purposes.
     
     func makeAuthRequest() {
         let factory = requestFactory.makeAuthRequestFactory()

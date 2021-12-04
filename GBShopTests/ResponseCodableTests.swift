@@ -36,12 +36,12 @@ class ResponseCodableTests: XCTestCase {
     var errorParser: ErrorParserStub!
     
     override func setUpWithError() throws {
-        try! super.setUpWithError()
+        try? super.setUpWithError()
         errorParser = ErrorParserStub()
     }
     
     override func tearDownWithError() throws {
-        try! super.tearDownWithError()
+        try? super.tearDownWithError()
         errorParser = nil
     }
     
@@ -51,8 +51,7 @@ class ResponseCodableTests: XCTestCase {
             .responseCodable(errorParser: errorParser) { (response: DataResponse<PostStub, AFError>) in
                 switch response.result {
                 case .success(_): break
-                case .failure:
-                    XCTFail()
+                case .failure: XCTFail()
                 }
                 self.expectation.fulfill()
             }
