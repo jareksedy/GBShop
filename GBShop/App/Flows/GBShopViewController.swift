@@ -17,6 +17,8 @@ class GBShopViewController: UIViewController {
         makeAuthRequest()
         makeSignupRequest()
         makeChangeUserDataRequest()
+        makeGetCatalogRequest()
+        makeGetGoodRequest()
         makeLogoutRequest()
     }
     
@@ -84,6 +86,32 @@ class GBShopViewController: UIViewController {
         let user = User(id: 123)
         
         factory.logout(user: user) { response in
+            switch response.result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func makeGetCatalogRequest() {
+        let factory = requestFactory.makeGetCatalogRequestFactory()
+        
+        factory.getCatalog(pageNumber: 1, categoryId: 1) { response in
+            switch response.result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func makeGetGoodRequest() {
+        let factory = requestFactory.makeGetGoodRequestFactory()
+        
+        factory.getGood(productId: 123) { response in
             switch response.result {
             case .success(let result):
                 print(result)
