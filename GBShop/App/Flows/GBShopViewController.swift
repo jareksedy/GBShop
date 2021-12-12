@@ -21,6 +21,7 @@ class GBShopViewController: UIViewController {
         makeGetGoodRequest()
         makeLogoutRequest()
         makeGetReviewsRequest()
+        makeAddReviewRequest()
     }
     
     // MARK: - Methods for testing purposes.
@@ -126,6 +127,20 @@ class GBShopViewController: UIViewController {
         let factory = requestFactory.makeReviewsFactory()
         
         factory.getReviews(productId: 123) { response in
+            switch response.result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func makeAddReviewRequest() {
+        let factory = requestFactory.makeReviewsFactory()
+        let review = ReviewRequest(reviewText: "Товар — говно! Не берите!", userId: 123, productId: 666)
+        
+        factory.addReview(review: review){ response in
             switch response.result {
             case .success(let result):
                 print(result)

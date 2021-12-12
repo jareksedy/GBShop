@@ -23,6 +23,7 @@
 		CA8498BA2765C64700F6EB08 /* ReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B92765C64700F6EB08 /* ReviewResponse.swift */; };
 		CA8498BC2765C75900F6EB08 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498BB2765C75900F6EB08 /* ReviewRequestFactory.swift */; };
 		CA8498BE2765C80D00F6EB08 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498BD2765C80D00F6EB08 /* Reviews.swift */; };
+		CA8498C02765CC7200F6EB08 /* ReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498BF2765CC7200F6EB08 /* ReviewRequest.swift */; };
 		CA875849275B77E100C60E07 /* RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875848275B77E100C60E07 /* RequestsTests.swift */; };
 		CA87584F275BDFD600C60E07 /* GetCatalogRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87584E275BDFD600C60E07 /* GetCatalogRequestFactory.swift */; };
 		CA875851275BE19600C60E07 /* GetGoodRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */; };
@@ -84,6 +85,7 @@
 		CA8498B92765C64700F6EB08 /* ReviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewResponse.swift; sourceTree = "<group>"; };
 		CA8498BB2765C75900F6EB08 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
 		CA8498BD2765C80D00F6EB08 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		CA8498BF2765CC7200F6EB08 /* ReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequest.swift; sourceTree = "<group>"; };
 		CA875848275B77E100C60E07 /* RequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTests.swift; sourceTree = "<group>"; };
 		CA87584E275BDFD600C60E07 /* GetCatalogRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalogRequestFactory.swift; sourceTree = "<group>"; };
 		CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoodRequestFactory.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			children = (
 				CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */,
 				CA8498B92765C64700F6EB08 /* ReviewResponse.swift */,
+				CA8498BF2765CC7200F6EB08 /* ReviewRequest.swift */,
 				CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */,
 				CA8498B72765C07300F6EB08 /* GoodResponse.swift */,
 				CAD4852327576B2900F2D941 /* LogoutResult.swift */,
@@ -450,6 +453,7 @@
 				CAD4851A2757492200F2D941 /* AuthRequestFactory.swift in Sources */,
 				CA875853275BE1E500C60E07 /* GetCatalog.swift in Sources */,
 				CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */,
+				CA8498C02765CC7200F6EB08 /* ReviewRequest.swift in Sources */,
 				CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */,
 				CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */,
 				CA8498BE2765C80D00F6EB08 /* Reviews.swift in Sources */,
