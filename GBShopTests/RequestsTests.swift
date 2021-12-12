@@ -139,4 +139,17 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
+    
+    func testShouldPerformRemoveReviewsRequest() {
+        let factory = requestFactory.makeReviewsFactory()
+        
+        factory.removeReview(reviewId: 123) { response in
+            switch response.result {
+            case .success(let result): XCTAssertEqual(result.result, 1)
+            case .failure: XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
+    }
 }

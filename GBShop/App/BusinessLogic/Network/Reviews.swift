@@ -25,6 +25,11 @@ class Reviews: AbstractRequestFactory {
 }
 
 extension Reviews: ReviewRequestFactory {
+    func removeReview(reviewId: Int, completionHandler: @escaping (AFDataResponse<DefaultResponse>) -> Void) {
+        let requestModel = RemoveReview(baseUrl: baseUrl, reviewId: reviewId)
+        self.request(request: requestModel, completionHandler: completionHandler)
+    }
+    
     func addReview(review: ReviewRequest, completionHandler: @escaping (AFDataResponse<DefaultResponse>) -> Void) {
         let requestModel = AddReview(baseUrl: baseUrl, review: review)
         self.request(request: requestModel, completionHandler: completionHandler)
@@ -37,6 +42,20 @@ extension Reviews: ReviewRequestFactory {
 }
 
 extension Reviews {
+    struct RemoveReview: RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .post
+        let path: String = "removereview"
+
+        let reviewId: Int
+
+        var parameters: Parameters? {
+            return [
+                "reviewId": reviewId
+            ]
+        }
+    }
+    
     struct AddReview: RequestRouter {
         let baseUrl: URL
         let method: HTTPMethod = .post
