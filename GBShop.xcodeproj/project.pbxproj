@@ -21,6 +21,8 @@
 		CA8498B62765BD0C00F6EB08 /* CatalogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */; };
 		CA8498B82765C07300F6EB08 /* GoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B72765C07300F6EB08 /* GoodResponse.swift */; };
 		CA8498BA2765C64700F6EB08 /* ReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B92765C64700F6EB08 /* ReviewResponse.swift */; };
+		CA8498BC2765C75900F6EB08 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498BB2765C75900F6EB08 /* ReviewRequestFactory.swift */; };
+		CA8498BE2765C80D00F6EB08 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498BD2765C80D00F6EB08 /* Reviews.swift */; };
 		CA875849275B77E100C60E07 /* RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875848275B77E100C60E07 /* RequestsTests.swift */; };
 		CA87584F275BDFD600C60E07 /* GetCatalogRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87584E275BDFD600C60E07 /* GetCatalogRequestFactory.swift */; };
 		CA875851275BE19600C60E07 /* GetGoodRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */; };
@@ -80,6 +82,8 @@
 		CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogResponse.swift; sourceTree = "<group>"; };
 		CA8498B72765C07300F6EB08 /* GoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodResponse.swift; sourceTree = "<group>"; };
 		CA8498B92765C64700F6EB08 /* ReviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewResponse.swift; sourceTree = "<group>"; };
+		CA8498BB2765C75900F6EB08 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
+		CA8498BD2765C80D00F6EB08 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		CA875848275B77E100C60E07 /* RequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTests.swift; sourceTree = "<group>"; };
 		CA87584E275BDFD600C60E07 /* GetCatalogRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalogRequestFactory.swift; sourceTree = "<group>"; };
 		CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoodRequestFactory.swift; sourceTree = "<group>"; };
@@ -196,12 +200,14 @@
 				CAD4852727576F1500F2D941 /* SignupRequestFactory.swift */,
 				CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */,
 				CA87584E275BDFD600C60E07 /* GetCatalogRequestFactory.swift */,
+				CA8498BB2765C75900F6EB08 /* ReviewRequestFactory.swift */,
 				CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */,
 				CAD4851B2757494100F2D941 /* Auth.swift */,
 				CA347ED6275771E2001BAEC1 /* Signup.swift */,
 				CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */,
 				CA875852275BE1E500C60E07 /* GetCatalog.swift */,
 				CA875854275BE35D00C60E07 /* GetGood.swift */,
+				CA8498BD2765C80D00F6EB08 /* Reviews.swift */,
 				CAD4851D2757494C00F2D941 /* RequestFactory.swift */,
 			);
 			path = Network;
@@ -421,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8498BC2765C75900F6EB08 /* ReviewRequestFactory.swift in Sources */,
 				CAD485222757499900F2D941 /* User.swift in Sources */,
 				CAD4852427576B2900F2D941 /* LogoutResult.swift in Sources */,
 				CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */,
@@ -445,6 +452,7 @@
 				CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */,
 				CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */,
 				CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */,
+				CA8498BE2765C80D00F6EB08 /* Reviews.swift in Sources */,
 				CA2824822751E3EF0097488F /* SceneDelegate.swift in Sources */,
 				CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */,
 				CA87584F275BDFD600C60E07 /* GetCatalogRequestFactory.swift in Sources */,

@@ -113,4 +113,17 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
+    
+    func testShouldPerformGetReviewsRequest() {
+        let factory = requestFactory.makeReviewsFactory()
+        
+        factory.getReviews(productId: 123) { response in
+            switch response.result {
+            case .success(let result): XCTAssertGreaterThan(result.count, 0)
+            case .failure: XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
+    }
 }
