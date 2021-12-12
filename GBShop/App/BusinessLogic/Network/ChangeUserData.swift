@@ -12,7 +12,7 @@ class ChangeUserData: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
-    let baseUrl = URL(string: "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let baseUrl = URL(string: "https://shrouded-mountain-46406.herokuapp.com/")!
     
     init(
         errorParser: AbstractErrorParser,
@@ -25,7 +25,7 @@ class ChangeUserData: AbstractRequestFactory {
 }
 
 extension ChangeUserData: ChangeUserDataRequestFactory {
-    func changeUserData(user: User, completionHandler: @escaping (AFDataResponse<ChangeUserDataResult>) -> Void) {
+    func changeUserData(user: User, completionHandler: @escaping (AFDataResponse<DefaultResponse>) -> Void) {
         let requestModel = ChangeUserData(baseUrl: baseUrl, user: user)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
@@ -34,18 +34,18 @@ extension ChangeUserData: ChangeUserDataRequestFactory {
 extension ChangeUserData {
     struct ChangeUserData: RequestRouter {
         let baseUrl: URL
-        let method: HTTPMethod = .get
-        let path: String = "changeUserData.json"
+        let method: HTTPMethod = .post
+        let path: String = "changeuserdata"
         
         let user: User
         var parameters: Parameters? {
             return [
-                "id_user": user.id ?? 0,
-                "username": user.login ?? "",
+                "id": user.id ?? 0,
+                "login": user.login ?? "",
                 "password": user.password ?? "",
                 "email": user.email ?? "",
                 "gender": user.gender ?? "",
-                "credit_card": user.creditCard ?? "",
+                "creditCard": user.creditCard ?? "",
                 "bio": user.bio ?? ""
             ]
         }
