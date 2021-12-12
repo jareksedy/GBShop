@@ -19,6 +19,7 @@
 		CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */; };
 		CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */; };
 		CA8498B62765BD0C00F6EB08 /* CatalogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */; };
+		CA8498B82765C07300F6EB08 /* GoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B72765C07300F6EB08 /* GoodResponse.swift */; };
 		CA875849275B77E100C60E07 /* RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875848275B77E100C60E07 /* RequestsTests.swift */; };
 		CA87584B275BDE3F00C60E07 /* Good.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87584A275BDE3F00C60E07 /* Good.swift */; };
 		CA87584F275BDFD600C60E07 /* GetCatalogRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87584E275BDFD600C60E07 /* GetCatalogRequestFactory.swift */; };
@@ -78,6 +79,7 @@
 		CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
 		CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResponse.swift; sourceTree = "<group>"; };
 		CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogResponse.swift; sourceTree = "<group>"; };
+		CA8498B72765C07300F6EB08 /* GoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodResponse.swift; sourceTree = "<group>"; };
 		CA875848275B77E100C60E07 /* RequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTests.swift; sourceTree = "<group>"; };
 		CA87584A275BDE3F00C60E07 /* Good.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Good.swift; sourceTree = "<group>"; };
 		CA87584E275BDFD600C60E07 /* GetCatalogRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalogRequestFactory.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				CAD4851F2757497700F2D941 /* LoginResult.swift */,
 				CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */,
 				CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */,
+				CA8498B72765C07300F6EB08 /* GoodResponse.swift */,
 				CAD4852327576B2900F2D941 /* LogoutResult.swift */,
 				CAD4852527576E3D00F2D941 /* SignupResult.swift */,
 				CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */,
@@ -426,6 +429,7 @@
 				CAD485202757497700F2D941 /* LoginResult.swift in Sources */,
 				CAD4852427576B2900F2D941 /* LogoutResult.swift in Sources */,
 				CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */,
+				CA8498B82765C07300F6EB08 /* GoodResponse.swift in Sources */,
 				CAD485172757487600F2D941 /* RequestRouter.swift in Sources */,
 				CAD485152757485000F2D941 /* AbstractRequestFactory.swift in Sources */,
 				CA875855275BE35D00C60E07 /* GetGood.swift in Sources */,

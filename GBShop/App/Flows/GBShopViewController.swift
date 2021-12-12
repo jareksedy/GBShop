@@ -18,7 +18,7 @@ class GBShopViewController: UIViewController {
         makeSignupRequest()
         makeChangeUserDataRequest()
         makeGetCatalogRequest()
-//        makeGetGoodRequest()
+        makeGetGoodRequest()
         makeLogoutRequest()
     }
     
