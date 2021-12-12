@@ -20,8 +20,8 @@
 		CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */; };
 		CA8498B62765BD0C00F6EB08 /* CatalogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */; };
 		CA8498B82765C07300F6EB08 /* GoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B72765C07300F6EB08 /* GoodResponse.swift */; };
+		CA8498BA2765C64700F6EB08 /* ReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B92765C64700F6EB08 /* ReviewResponse.swift */; };
 		CA875849275B77E100C60E07 /* RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875848275B77E100C60E07 /* RequestsTests.swift */; };
-		CA87584B275BDE3F00C60E07 /* Good.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87584A275BDE3F00C60E07 /* Good.swift */; };
 		CA87584F275BDFD600C60E07 /* GetCatalogRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87584E275BDFD600C60E07 /* GetCatalogRequestFactory.swift */; };
 		CA875851275BE19600C60E07 /* GetGoodRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */; };
 		CA875853275BE1E500C60E07 /* GetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875852275BE1E500C60E07 /* GetCatalog.swift */; };
@@ -38,7 +38,6 @@
 		CAD4851A2757492200F2D941 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485192757492200F2D941 /* AuthRequestFactory.swift */; };
 		CAD4851C2757494100F2D941 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4851B2757494100F2D941 /* Auth.swift */; };
 		CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4851D2757494C00F2D941 /* RequestFactory.swift */; };
-		CAD485202757497700F2D941 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4851F2757497700F2D941 /* LoginResult.swift */; };
 		CAD485222757499900F2D941 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485212757499900F2D941 /* User.swift */; };
 		CAD4852427576B2900F2D941 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4852327576B2900F2D941 /* LogoutResult.swift */; };
 		CAD4852627576E3D00F2D941 /* SignupResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4852527576E3D00F2D941 /* SignupResult.swift */; };
@@ -80,8 +79,8 @@
 		CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResponse.swift; sourceTree = "<group>"; };
 		CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogResponse.swift; sourceTree = "<group>"; };
 		CA8498B72765C07300F6EB08 /* GoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodResponse.swift; sourceTree = "<group>"; };
+		CA8498B92765C64700F6EB08 /* ReviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewResponse.swift; sourceTree = "<group>"; };
 		CA875848275B77E100C60E07 /* RequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTests.swift; sourceTree = "<group>"; };
-		CA87584A275BDE3F00C60E07 /* Good.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Good.swift; sourceTree = "<group>"; };
 		CA87584E275BDFD600C60E07 /* GetCatalogRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalogRequestFactory.swift; sourceTree = "<group>"; };
 		CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoodRequestFactory.swift; sourceTree = "<group>"; };
 		CA875852275BE1E500C60E07 /* GetCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalog.swift; sourceTree = "<group>"; };
@@ -97,7 +96,6 @@
 		CAD485192757492200F2D941 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		CAD4851B2757494100F2D941 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		CAD4851D2757494C00F2D941 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
-		CAD4851F2757497700F2D941 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		CAD485212757499900F2D941 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CAD4852327576B2900F2D941 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
 		CAD4852527576E3D00F2D941 /* SignupResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResult.swift; sourceTree = "<group>"; };
@@ -258,15 +256,14 @@
 		CAE4C8E92751F97E00D97D2B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				CAD4851F2757497700F2D941 /* LoginResult.swift */,
 				CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */,
+				CA8498B92765C64700F6EB08 /* ReviewResponse.swift */,
 				CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */,
 				CA8498B72765C07300F6EB08 /* GoodResponse.swift */,
 				CAD4852327576B2900F2D941 /* LogoutResult.swift */,
 				CAD4852527576E3D00F2D941 /* SignupResult.swift */,
 				CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */,
 				CAD485212757499900F2D941 /* User.swift */,
-				CA87584A275BDE3F00C60E07 /* Good.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -424,11 +421,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA87584B275BDE3F00C60E07 /* Good.swift in Sources */,
 				CAD485222757499900F2D941 /* User.swift in Sources */,
-				CAD485202757497700F2D941 /* LoginResult.swift in Sources */,
 				CAD4852427576B2900F2D941 /* LogoutResult.swift in Sources */,
 				CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */,
+				CA8498BA2765C64700F6EB08 /* ReviewResponse.swift in Sources */,
 				CA8498B82765C07300F6EB08 /* GoodResponse.swift in Sources */,
 				CAD485172757487600F2D941 /* RequestRouter.swift in Sources */,
 				CAD485152757485000F2D941 /* AbstractRequestFactory.swift in Sources */,
