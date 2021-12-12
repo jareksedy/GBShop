@@ -113,4 +113,43 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
+    
+    func testShouldPerformGetReviewsRequest() {
+        let factory = requestFactory.makeReviewsFactory()
+        
+        factory.getReviews(productId: 123) { response in
+            switch response.result {
+            case .success(let result): XCTAssertGreaterThan(result.count, 0)
+            case .failure: XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
+    }
+    
+    func testShouldPerformAddReviewsRequest() {
+        let factory = requestFactory.makeReviewsFactory()
+        
+        factory.addReview(review: ReviewRequest(reviewText: "Товар говно!!!", userId: 123, productId: 666)) { response in
+            switch response.result {
+            case .success(let result): XCTAssertEqual(result.result, 1)
+            case .failure: XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
+    }
+    
+    func testShouldPerformRemoveReviewsRequest() {
+        let factory = requestFactory.makeReviewsFactory()
+        
+        factory.removeReview(reviewId: 123) { response in
+            switch response.result {
+            case .success(let result): XCTAssertEqual(result.result, 1)
+            case .failure: XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
+    }
 }
