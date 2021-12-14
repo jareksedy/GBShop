@@ -31,6 +31,7 @@ class GBShopViewController: UIViewController {
     
     // MARK: - Methods for testing purposes.
     
+    // MARK: - Auth, signup, change user data & logout requests.
     func makeAuthRequest() {
         let factory = requestFactory.makeAuthRequestFactory()
         let user = User(login: "Somebody", password: "mypassword")
@@ -102,6 +103,7 @@ class GBShopViewController: UIViewController {
         }
     }
     
+    // MARK: - Get catalog & get item requests.
     func makeGetCatalogRequest() {
         let factory = requestFactory.makeGetCatalogRequestFactory()
         
@@ -128,6 +130,7 @@ class GBShopViewController: UIViewController {
         }
     }
     
+    // MARK: - Reviews requests.
     func makeGetReviewsRequest() {
         let factory = requestFactory.makeReviewsRequestFactory()
         
@@ -168,6 +171,7 @@ class GBShopViewController: UIViewController {
         }
     }
     
+    // MARK: - Cart requests.
     func makeGetCartRequest() {
         let factory = requestFactory.makeCartRequestFactory()
 
