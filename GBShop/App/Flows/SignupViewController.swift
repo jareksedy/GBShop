@@ -34,11 +34,39 @@ class SignupViewController: UIViewController {
         self.formStackView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
     }
     
-    private func registerNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    private func setupControls() {
+        signupButton.backgroundColor = UIColor.opaqueSeparator
+        signupButton.isEnabled = false
+        
+        [firstNameTextField, lastNameTextField, emailTextField, loginTextField, passwordTextField, bioTextField].forEach {
+            $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+        }
     }
     
+    private func isFormFilled() -> Bool {
+        guard firstNameTextField.text != "",
+              lastNameTextField.text != "",
+              emailTextField.text != "",
+              loginTextField.text != "",
+              passwordTextField.text != "" else {
+                  return false
+              }
+        return true
+    }
+    
+    private func registerNotifications() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification,
+                                               object: nil)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+    }
+    
+    // MARK: -- Selectors.
     @objc func keyboardWillShow(notification: NSNotification) {
         guard let userInfo = notification.userInfo else { return }
         
@@ -56,6 +84,17 @@ class SignupViewController: UIViewController {
         scrollView.contentInset = contentInset
     }
     
+    @objc func editingChanged(_ textField: UITextField) {
+        guard isFormFilled() else {
+            signupButton.backgroundColor = UIColor.opaqueSeparator
+            signupButton.isEnabled = false
+            return
+        }
+        
+        signupButton.backgroundColor = UIColor.systemOrange
+        signupButton.isEnabled = true
+    }
+    
     // MARK: -- Actions.
     @IBAction func clearButtonTapped(_ sender: Any) {
         firstNameTextField.text = ""
@@ -65,14 +104,17 @@ class SignupViewController: UIViewController {
         loginTextField.text = ""
         passwordTextField.text = ""
         bioTextField.text = ""
+        
+        signupButton.backgroundColor = UIColor.opaqueSeparator
+        signupButton.isEnabled = false
     }
     
     // MARK: -- ViewController methods.
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setConstraints()
+        setupControls()
         registerNotifications()
     }
 }
