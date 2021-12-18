@@ -87,6 +87,14 @@ class AuthViewController: UIViewController {
         loginButton.isEnabled = true
     }
     
+    // MARK: -- Actions.
+    @IBAction func loginButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func signupButtonTapped(_ sender: Any) {
+    }
+    
+    
     // MARK: -- ViewController methods.
     override func viewDidLoad() {
         super.viewDidLoad()

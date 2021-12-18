@@ -94,7 +94,11 @@ class EditDataViewController: UIViewController {
         saveDataButton.isEnabled = true
     }
     
-    // MARK: -- ViewControl methods.
+    // MARK: -- Actions.
+    @IBAction func saveDataButtonTapped(_ sender: Any) {
+    }
+    
+    // MARK: -- ViewController methods.
     override func viewDidLoad() {
         super.viewDidLoad()
         
