@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="399-9T-zhE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ph6-YE-ngi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -192,6 +192,106 @@
                 </stackView>
             </objects>
             <point key="canvasLocation" x="1069.5652173913045" y="137.94642857142856"/>
+        </scene>
+        <!--Auth View Controller-->
+        <scene sceneID="WqO-iH-6bZ">
+            <objects>
+                <viewController id="Ph6-YE-ngi" customClass="AuthViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rLa-84-6EY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4t-1c-SIP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W1b-ec-oWh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="e4t-1c-SIP" secondAttribute="bottom" id="2x1-rc-96p"/>
+                            <constraint firstItem="e4t-1c-SIP" firstAttribute="leading" secondItem="W1b-ec-oWh" secondAttribute="leading" id="Bi6-gZ-4dS"/>
+                            <constraint firstItem="e4t-1c-SIP" firstAttribute="trailing" secondItem="W1b-ec-oWh" secondAttribute="trailing" id="MLS-Bk-u8r"/>
+                            <constraint firstItem="e4t-1c-SIP" firstAttribute="top" secondItem="rLa-84-6EY" secondAttribute="top" id="Oac-Wt-GFs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="formStackView" destination="cwh-gc-RSg" id="31h-Wj-Tv0"/>
+                        <outlet property="loginButton" destination="ViS-Q0-McR" id="tJX-Y2-rP8"/>
+                        <outlet property="loginTextField" destination="6Xm-IM-wUL" id="khu-wb-llN"/>
+                        <outlet property="passwordTextField" destination="4t7-oe-2Aa" id="9Xa-in-7hM"/>
+                        <outlet property="scrollView" destination="e4t-1c-SIP" id="FZu-2l-IH2"/>
+                        <outlet property="signupButton" destination="mtl-M9-Wq5" id="6xu-0K-Pun"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1d-QD-R9c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" id="cwh-gc-RSg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NW3-oO-FPG">
+                            <rect key="frame" x="25" y="69" width="364" height="25"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="nIu-m4-EmD"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти в магазин" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-At-BAk">
+                            <rect key="frame" x="25" y="119" width="364" height="697"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Xm-IM-wUL">
+                            <rect key="frame" x="25" y="841" width="364" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="rSy-TM-X4V"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-oe-2Aa">
+                            <rect key="frame" x="25" y="941" width="364" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="Uav-c2-HnO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-Q0-McR">
+                            <rect key="frame" x="25" y="1041" width="364" height="75"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="nS6-68-hAE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Войти">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtl-M9-Wq5">
+                            <rect key="frame" x="25" y="1141" width="364" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="dOy-9Y-iq5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Зарегистрироваться"/>
+                            <connections>
+                                <action selector="clearButtonTapped:" destination="399-9T-zhE" eventType="touchUpInside" id="ITQ-bq-l76"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="RG0-2a-4Gr"/>
+                    <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="1818.840579710145" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>

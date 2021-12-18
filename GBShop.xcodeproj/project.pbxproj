@@ -30,6 +30,7 @@
 		CA875851275BE19600C60E07 /* GetGoodRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */; };
 		CA875853275BE1E500C60E07 /* GetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875852275BE1E500C60E07 /* GetCatalog.swift */; };
 		CA875855275BE35D00C60E07 /* GetGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875854275BE35D00C60E07 /* GetGood.swift */; };
+		CA97005F276E53130042EE91 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97005E276E53130042EE91 /* AuthViewController.swift */; };
 		CAC77AE12769022F00FCA40C /* CartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC77AE02769022E00FCA40C /* CartRequest.swift */; };
 		CAC77AE32769024900FCA40C /* CartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC77AE22769024900FCA40C /* CartResponse.swift */; };
 		CAC77AE5276902AD00FCA40C /* CartRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC77AE4276902AD00FCA40C /* CartRequestFactory.swift */; };
@@ -95,6 +96,7 @@
 		CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoodRequestFactory.swift; sourceTree = "<group>"; };
 		CA875852275BE1E500C60E07 /* GetCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalog.swift; sourceTree = "<group>"; };
 		CA875854275BE35D00C60E07 /* GetGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGood.swift; sourceTree = "<group>"; };
+		CA97005E276E53130042EE91 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		CAC77AE02769022E00FCA40C /* CartRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRequest.swift; sourceTree = "<group>"; };
 		CAC77AE22769024900FCA40C /* CartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartResponse.swift; sourceTree = "<group>"; };
 		CAC77AE4276902AD00FCA40C /* CartRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRequestFactory.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				CAD485062757330D00F2D941 /* GBShop.storyboard */,
 				CAD485082757376F00F2D941 /* GBShopViewController.swift */,
 				CA4E26CB276DE931006947A4 /* SignupViewController.swift */,
+				CA97005E276E53130042EE91 /* AuthViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				CA8498C02765CC7200F6EB08 /* ReviewRequest.swift in Sources */,
 				CA4E26CC276DE931006947A4 /* SignupViewController.swift in Sources */,
 				CAC77AE12769022F00FCA40C /* CartRequest.swift in Sources */,
+				CA97005F276E53130042EE91 /* AuthViewController.swift in Sources */,
 				CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */,
 				CAC77AE32769024900FCA40C /* CartResponse.swift in Sources */,
 				CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */,
