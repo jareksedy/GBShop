@@ -44,10 +44,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="ERn-uB-cFN">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="ERn-uB-cFN">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="wka-DR-gcF"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="cNe-aP-kTL"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wJi-MH-4VJ"/>
