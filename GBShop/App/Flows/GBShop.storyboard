@@ -78,17 +78,21 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация нового пользователя" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-Xn-8UH">
-                            <rect key="frame" x="25" y="44" width="364" height="76.5"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="wr5-cX-oUh">
+                            <rect key="frame" x="25" y="69" width="364" height="25"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="150" id="46M-C8-icG"/>
+                                <constraint firstAttribute="height" constant="25" id="0Z9-QL-keV"/>
                             </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация нового пользователя" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-Xn-8UH">
+                            <rect key="frame" x="25" y="119" width="364" height="97"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваше имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zwO-vA-CwA">
-                            <rect key="frame" x="25" y="145.5" width="364" height="75"/>
+                            <rect key="frame" x="25" y="241" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="DnA-mJ-bE2"/>
                             </constraints>
@@ -96,7 +100,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваша фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9a-eL-FTm">
-                            <rect key="frame" x="25" y="245.5" width="364" height="75"/>
+                            <rect key="frame" x="25" y="341" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="W5B-bL-kZV"/>
                             </constraints>
@@ -104,7 +108,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Электронная почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z5n-De-7Nd">
-                            <rect key="frame" x="25" y="345.5" width="364" height="75"/>
+                            <rect key="frame" x="25" y="441" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="Ucg-xX-eIU"/>
                             </constraints>
@@ -112,7 +116,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0tO-Vn-qKb">
-                            <rect key="frame" x="25" y="445.5" width="364" height="76"/>
+                            <rect key="frame" x="25" y="541" width="364" height="76"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="dJt-wh-XGj"/>
                             </constraints>
@@ -122,7 +126,7 @@
                             </segments>
                         </segmentedControl>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXa-3O-JB9">
-                            <rect key="frame" x="25" y="545.5" width="364" height="75"/>
+                            <rect key="frame" x="25" y="641" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="65F-16-tZv"/>
                             </constraints>
@@ -130,7 +134,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCk-Cf-77V">
-                            <rect key="frame" x="25" y="645.5" width="364" height="75"/>
+                            <rect key="frame" x="25" y="741" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="tPy-nd-oEP"/>
                             </constraints>
@@ -138,7 +142,7 @@
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="О себе" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPj-Ug-9Im">
-                            <rect key="frame" x="25" y="745.5" width="364" height="75"/>
+                            <rect key="frame" x="25" y="841" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="QZZ-dQ-6yf"/>
                             </constraints>
@@ -146,7 +150,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkn-c5-YZo">
-                            <rect key="frame" x="25" y="845.5" width="364" height="75"/>
+                            <rect key="frame" x="25" y="941" width="364" height="75"/>
                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="A4N-S0-Or2"/>
@@ -163,7 +167,7 @@
                             </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFa-oq-9ZZ">
-                            <rect key="frame" x="25" y="945.5" width="364" height="25"/>
+                            <rect key="frame" x="25" y="1041" width="364" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="kXg-vF-2kF"/>
                             </constraints>
@@ -175,7 +179,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрируясь вы автоматически принимаете условия пользовательского соглашения." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvP-EO-1r6">
-                            <rect key="frame" x="25" y="995.5" width="364" height="75"/>
+                            <rect key="frame" x="25" y="1091" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="3rd-Pb-woG"/>
                             </constraints>
@@ -185,13 +189,14 @@
                         </label>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="LPP-S0-7bv"/>
-                    <edgeInsets key="layoutMargins" top="0.0" left="25" bottom="0.0" right="25"/>
+                    <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
             <point key="canvasLocation" x="1069.5652173913045" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="logo" width="1064" height="224"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
