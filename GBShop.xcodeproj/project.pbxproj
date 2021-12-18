@@ -17,6 +17,7 @@
 		CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */; };
 		CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */; };
 		CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */; };
+		CA4E26CC276DE931006947A4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E26CB276DE931006947A4 /* SignupViewController.swift */; };
 		CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */; };
 		CA8498B62765BD0C00F6EB08 /* CatalogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */; };
 		CA8498B82765C07300F6EB08 /* GoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B72765C07300F6EB08 /* GoodResponse.swift */; };
@@ -81,6 +82,7 @@
 		CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataResult.swift; sourceTree = "<group>"; };
 		CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
 		CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
+		CA4E26CB276DE931006947A4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResponse.swift; sourceTree = "<group>"; };
 		CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogResponse.swift; sourceTree = "<group>"; };
 		CA8498B72765C07300F6EB08 /* GoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodResponse.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 			children = (
 				CAD485062757330D00F2D941 /* GBShop.storyboard */,
 				CAD485082757376F00F2D941 /* GBShopViewController.swift */,
+				CA4E26CB276DE931006947A4 /* SignupViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				CA875853275BE1E500C60E07 /* GetCatalog.swift in Sources */,
 				CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */,
 				CA8498C02765CC7200F6EB08 /* ReviewRequest.swift in Sources */,
+				CA4E26CC276DE931006947A4 /* SignupViewController.swift in Sources */,
 				CAC77AE12769022F00FCA40C /* CartRequest.swift in Sources */,
 				CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */,
 				CAC77AE32769024900FCA40C /* CartResponse.swift in Sources */,
@@ -644,6 +648,8 @@
 				INFOPLIST_FILE = GBShop/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = GBShop;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -671,6 +677,8 @@
 				INFOPLIST_FILE = GBShop/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = GBShop;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
