@@ -22,6 +22,8 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
     
+    let requestFactory = RequestFactory()
+    
     private func setConstraints() {
         self.scrollView.addSubview(formStackView)
         self.formStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -95,12 +97,43 @@ class SignupViewController: UIViewController {
         signupButton.isEnabled = true
     }
     
-    // MARK: -- Actions.
-    @IBAction func signupButtonTapped(_ sender: Any) {
+    // MARK: -- Success & Error Messages.
+    private func showSuccessScreen() {
         let signupSuccessViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignupSuccessViewController") as! SignupSuccessViewController
         
         signupSuccessViewController.modalPresentationStyle = .fullScreen
         self.present(signupSuccessViewController, animated: true, completion: nil)
+    }
+    
+    private func showError(_ error: Error) {
+        let alert = UIAlertController(title: "Ошибка регистрации", message: error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: -- Actions.
+    @IBAction func signupButtonTapped(_ sender: Any) {
+        
+        signupButton.backgroundColor = UIColor.opaqueSeparator
+        signupButton.isEnabled = false
+        
+        let factory = requestFactory.makeSignupRequestFactory()
+        let user = User(login: loginTextField.text,
+                        password: passwordTextField.text,
+                        email: emailTextField.text,
+                        gender: genderSegmentedControl.selectedSegmentIndex == 0 ? "M" : "F",
+                        bio: bioTextField.text,
+                        name: firstNameTextField.text,
+                        lastname: lastNameTextField.text)
+        
+        factory.signup(user: user) { response in
+            DispatchQueue.main.async {
+                switch response.result {
+                case .success: self.showSuccessScreen()
+                case .failure(let error): self.showError(error)
+                }
+            }
+        }
     }
     
     @IBAction func clearButtonTapped(_ sender: Any) {
