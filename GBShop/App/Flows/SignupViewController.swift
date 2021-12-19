@@ -105,8 +105,8 @@ class SignupViewController: UIViewController {
         self.present(signupSuccessViewController, animated: true, completion: nil)
     }
     
-    private func showError(_ error: Error) {
-        let alert = UIAlertController(title: "Ошибка регистрации", message: error.localizedDescription, preferredStyle: .alert)
+    private func showError(_ errorMessage: String) {
+        let alert = UIAlertController(title: "Ошибка сервера", message: errorMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
@@ -129,8 +129,8 @@ class SignupViewController: UIViewController {
         factory.signup(user: user) { response in
             DispatchQueue.main.async {
                 switch response.result {
-                case .success: self.showSuccessScreen()
-                case .failure(let error): self.showError(error)
+                case .success(let success): success.result == 1 ? self.showSuccessScreen() : self.showError(success.errorMessage ?? "Неизвестная ошибка.")
+                case .failure(let error): self.showError(error.localizedDescription)
                 }
             }
         }
