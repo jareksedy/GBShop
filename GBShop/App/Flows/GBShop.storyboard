@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tzJ-gb-Dz1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ny9-Zz-GX6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -34,18 +34,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="-390" y="138"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="KAe-rz-lgQ">
             <objects>
-                <viewController id="399-9T-zhE" customClass="SignupViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupViewController" id="399-9T-zhE" customClass="SignupViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hf8-a0-job">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="ERn-uB-cFN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wJi-MH-4VJ"/>
@@ -57,6 +57,7 @@
                             <constraint firstItem="ERn-uB-cFN" firstAttribute="leading" secondItem="wJi-MH-4VJ" secondAttribute="leading" id="e5s-Gz-rg1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sfS-qa-BOp"/>
                     <connections>
                         <outlet property="bioTextField" destination="XPj-Ug-9Im" id="wvw-CD-o17"/>
                         <outlet property="clearButton" destination="ZFa-oq-9ZZ" id="1k4-Le-kFM"/>
@@ -191,7 +192,7 @@
                     <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="1069.5652173913045" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1000" y="138"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="WqO-iH-6bZ">
@@ -214,6 +215,7 @@
                             <constraint firstItem="e4t-1c-SIP" firstAttribute="top" secondItem="rLa-84-6EY" secondAttribute="top" id="Oac-Wt-GFs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Daa-z3-wNn"/>
                     <connections>
                         <outlet property="formStackView" destination="cwh-gc-RSg" id="31h-Wj-Tv0"/>
                         <outlet property="loginButton" destination="ViS-Q0-McR" id="tJX-Y2-rP8"/>
@@ -295,18 +297,18 @@
                     <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="1818.840579710145" y="137.94642857142856"/>
+            <point key="canvasLocation" x="2691" y="138"/>
         </scene>
         <!--Edit Data View Controller-->
         <scene sceneID="cDf-iC-xEo">
             <objects>
                 <viewController id="kZc-A1-Hes" customClass="EditDataViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlc-5g-0rL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k55-wG-DPN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AMR-wF-agW"/>
@@ -318,6 +320,7 @@
                             <constraint firstItem="k55-wG-DPN" firstAttribute="leading" secondItem="AMR-wF-agW" secondAttribute="leading" id="xgv-zC-fkR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sGS-ca-fxW"/>
                     <connections>
                         <outlet property="bioTextField" destination="ce4-TX-LsS" id="QsZ-5g-8O2"/>
                         <outlet property="emailTextField" destination="InR-JR-uwa" id="czr-Ia-lwg"/>
@@ -453,18 +456,18 @@
                     <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="2562.3188405797105" y="137.94642857142856"/>
+            <point key="canvasLocation" x="4923" y="138"/>
         </scene>
         <!--Welcome Screen View Controller-->
         <scene sceneID="ya7-hr-LDa">
             <objects>
                 <viewController id="aHv-cI-VLP" customClass="WelcomeScreenViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bNM-Ng-mIr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aj2-D5-c7a">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mVj-6z-pYe"/>
@@ -476,6 +479,7 @@
                             <constraint firstItem="aj2-D5-c7a" firstAttribute="top" secondItem="bNM-Ng-mIr" secondAttribute="top" id="sIo-of-fb0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ZvS-cN-pUF"/>
                     <connections>
                         <outlet property="editDataButton" destination="1ZU-lT-jte" id="kb6-n0-bmP"/>
                         <outlet property="formStackView" destination="bKu-j5-fGR" id="ytT-Cn-9eu"/>
@@ -572,18 +576,18 @@
                     <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="3315.9420289855075" y="137.94642857142856"/>
+            <point key="canvasLocation" x="3477" y="138"/>
         </scene>
         <!--Edit Data Success View Controller-->
         <scene sceneID="eSW-SY-kRm">
             <objects>
                 <viewController id="tzJ-gb-Dz1" customClass="EditDataSuccessViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eka-0j-gtH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fn6-vL-phJ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fgs-TG-2Sc"/>
@@ -595,6 +599,7 @@
                             <constraint firstItem="fn6-vL-phJ" firstAttribute="top" secondItem="Eka-0j-gtH" secondAttribute="top" id="d9P-ds-kTg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uAJ-gK-WeQ"/>
                     <connections>
                         <outlet property="formStackView" destination="e8g-ye-VPZ" id="d4j-U4-Zjv"/>
                         <outlet property="proceedButton" destination="T1u-nx-uyU" id="bZh-nV-2C4"/>
@@ -602,7 +607,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Qv-he-7oZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="e8g-ye-VPZ">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" id="e8g-ye-VPZ">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
@@ -614,25 +619,22 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваши персональные данные сохранены, Ярослав!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASv-sr-Xev">
-                            <rect key="frame" x="25" y="94" width="364" height="115"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="200" id="WiR-7j-YUR"/>
-                            </constraints>
+                            <rect key="frame" x="25" y="119" width="364" height="872"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вам понадобится заново войти в приложение, используя свой логин и пароль." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkQ-mQ-moi">
-                            <rect key="frame" x="25" y="209" width="364" height="100"/>
+                            <rect key="frame" x="25" y="1016" width="364" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="100" id="672-W6-a2H"/>
+                                <constraint firstAttribute="height" constant="50" id="Qe3-9B-1ZP"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1u-nx-uyU">
-                            <rect key="frame" x="25" y="309" width="364" height="75"/>
+                            <rect key="frame" x="25" y="1091" width="364" height="75"/>
                             <color key="backgroundColor" systemColor="systemIndigoColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="Gqg-2N-2qu"/>
@@ -657,7 +659,29 @@
                     <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="4059.420289855073" y="137.94642857142856"/>
+            <point key="canvasLocation" x="5690" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AYQ-57-Y3p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ny9-Zz-GX6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T82-DN-cPV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ph6-YE-ngi" kind="relationship" relationship="rootViewController" id="25T-cK-aSx"/>
+                        <segue destination="aHv-cI-VLP" kind="show" identifier="toWelcomeScreen" id="PkS-tc-wQD"/>
+                        <segue destination="kZc-A1-Hes" kind="show" identifier="toEditScreen" id="AXu-JV-IP6"/>
+                        <segue destination="tzJ-gb-Dz1" kind="show" identifier="toEditSuccessScreen" id="Ub0-w0-LiP"/>
+                        <segue destination="399-9T-zhE" kind="show" identifier="toSignupScreen" id="xAI-PR-mMk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZZ-Wk-XTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="138"/>
         </scene>
     </scenes>
     <resources>

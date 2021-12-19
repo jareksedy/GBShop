@@ -92,6 +92,8 @@ class AuthViewController: UIViewController {
     }
     
     @IBAction func signupButtonTapped(_ sender: Any) {
+        let signupViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+        self.present(signupViewController, animated: true, completion: nil)
     }
     
     
