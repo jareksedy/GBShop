@@ -41,11 +41,11 @@
             <objects>
                 <viewController storyboardIdentifier="SignupViewController" id="399-9T-zhE" customClass="SignupViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hf8-a0-job">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="ERn-uB-cFN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wJi-MH-4VJ"/>
@@ -84,7 +84,7 @@
                                 <constraint firstAttribute="height" constant="25" id="0Z9-QL-keV"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация пользователя" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-Xn-8UH">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация нового пользователя" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-Xn-8UH">
                             <rect key="frame" x="25" y="119" width="364" height="97"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
@@ -165,6 +165,9 @@
                                     <integer key="value" value="6"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="signupButtonTapped:" destination="399-9T-zhE" eventType="touchUpInside" id="Fex-WF-sZ7"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFa-oq-9ZZ">
                             <rect key="frame" x="25" y="1041" width="364" height="25"/>
@@ -192,7 +195,91 @@
                     <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="1000" y="138"/>
+            <point key="canvasLocation" x="2690" y="-1404"/>
+        </scene>
+        <!--Signup Success View Controller-->
+        <scene sceneID="NvE-4o-RbF">
+            <objects>
+                <viewController storyboardIdentifier="SignupSuccessViewController" id="CDH-N4-jTQ" customClass="SignupSuccessViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCN-gK-Jx6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZu-4G-L08">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Slh-NW-1As"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dZu-4G-L08" firstAttribute="top" secondItem="rCN-gK-Jx6" secondAttribute="top" id="8DO-cO-VP8"/>
+                            <constraint firstItem="dZu-4G-L08" firstAttribute="leading" secondItem="Slh-NW-1As" secondAttribute="leading" id="AcY-rz-qi8"/>
+                            <constraint firstItem="dZu-4G-L08" firstAttribute="trailing" secondItem="Slh-NW-1As" secondAttribute="trailing" id="kxW-7Y-roS"/>
+                            <constraint firstAttribute="bottom" secondItem="dZu-4G-L08" secondAttribute="bottom" id="ppf-vm-8eh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VOE-SM-mG6"/>
+                    <connections>
+                        <outlet property="doneButton" destination="jhk-UX-wV4" id="p9u-d1-PCN"/>
+                        <outlet property="formStackView" destination="Xac-8h-o2h" id="r96-AM-ReR"/>
+                        <outlet property="scrollView" destination="dZu-4G-L08" id="bpJ-hg-bZ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hje-4i-9yf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" id="Xac-8h-o2h">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="BCg-wL-d5O">
+                            <rect key="frame" x="25" y="69" width="364" height="25"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="H1v-Wj-Nmz"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Благодарим за регистрацию!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-0y-Bhp">
+                            <rect key="frame" x="25" y="119" width="364" height="847"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Теперь вы можете войти со своим логином и паролем, указанными при регистрации." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdZ-tA-2Jq">
+                            <rect key="frame" x="25" y="991" width="364" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="iaG-Vq-YHr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhk-UX-wV4">
+                            <rect key="frame" x="25" y="1091" width="364" height="75"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="hVd-uw-A9f"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Понятно!">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="CDH-N4-jTQ" eventType="touchUpInside" id="ojk-UD-8zM"/>
+                                <action selector="logoutButtonTapped:" destination="aHv-cI-VLP" eventType="touchUpInside" id="CvV-Et-cyn"/>
+                                <action selector="proceedButtonTapped:" destination="tzJ-gb-Dz1" eventType="touchUpInside" id="el4-KM-YJ3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="jqc-eT-9Lf"/>
+                    <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="3477" y="-1404"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="WqO-iH-6bZ">
@@ -237,7 +324,7 @@
                                 <constraint firstAttribute="height" constant="25" id="nIu-m4-EmD"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти в магазин" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-At-BAk">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тук-тук, войдите..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-At-BAk">
                             <rect key="frame" x="25" y="119" width="364" height="697"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
@@ -500,7 +587,7 @@
                                 <constraint firstAttribute="height" constant="25" id="twa-EY-TD3"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здравствуй, дружок!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsa-ay-Wbq">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добрый день, Ярослав!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsa-ay-Wbq">
                             <rect key="frame" x="25" y="119" width="364" height="621"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
@@ -522,7 +609,7 @@
                                 <constraint firstAttribute="height" constant="1" id="xbJ-EO-vwc"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чем ты хочешь заняться сегодня?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jie-Er-8cn">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чем Вы хотели бы заняться сегодня?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jie-Er-8cn">
                             <rect key="frame" x="25" y="891" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="LyF-Pu-Quv"/>
@@ -676,7 +763,6 @@
                         <segue destination="aHv-cI-VLP" kind="show" identifier="toWelcomeScreen" id="PkS-tc-wQD"/>
                         <segue destination="kZc-A1-Hes" kind="show" identifier="toEditScreen" id="AXu-JV-IP6"/>
                         <segue destination="tzJ-gb-Dz1" kind="show" identifier="toEditSuccessScreen" id="Ub0-w0-LiP"/>
-                        <segue destination="399-9T-zhE" kind="show" identifier="toSignupScreen" id="xAI-PR-mMk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZZ-Wk-XTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

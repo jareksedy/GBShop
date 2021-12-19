@@ -96,6 +96,13 @@ class SignupViewController: UIViewController {
     }
     
     // MARK: -- Actions.
+    @IBAction func signupButtonTapped(_ sender: Any) {
+        let signupSuccessViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignupSuccessViewController") as! SignupSuccessViewController
+        
+        signupSuccessViewController.modalPresentationStyle = .fullScreen
+        self.present(signupSuccessViewController, animated: true, completion: nil)
+    }
+    
     @IBAction func clearButtonTapped(_ sender: Any) {
         firstNameTextField.text = ""
         lastNameTextField.text = ""
