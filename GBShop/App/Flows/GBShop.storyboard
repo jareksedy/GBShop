@@ -324,7 +324,7 @@
                                 <constraint firstAttribute="height" constant="25" id="nIu-m4-EmD"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тук-тук, войдите..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-At-BAk">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти в магазин" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-At-BAk">
                             <rect key="frame" x="25" y="119" width="364" height="697"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
