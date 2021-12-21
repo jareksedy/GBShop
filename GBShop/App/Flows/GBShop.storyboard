@@ -78,14 +78,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="wr5-cX-oUh">
-                            <rect key="frame" x="25" y="69" width="364" height="25"/>
+                            <rect key="frame" x="25" y="94" width="364" height="25"/>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="0Z9-QL-keV"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация нового пользователя" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-Xn-8UH">
-                            <rect key="frame" x="25" y="119" width="364" height="97"/>
+                            <rect key="frame" x="25" y="144" width="364" height="72"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -192,7 +192,7 @@
                         </label>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="LPP-S0-7bv"/>
-                    <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
+                    <edgeInsets key="layoutMargins" top="50" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
             <point key="canvasLocation" x="2690" y="-1404"/>
@@ -231,14 +231,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="BCg-wL-d5O">
-                            <rect key="frame" x="25" y="69" width="364" height="25"/>
+                            <rect key="frame" x="25" y="94" width="364" height="25"/>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="H1v-Wj-Nmz"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Благодарим за регистрацию!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-0y-Bhp">
-                            <rect key="frame" x="25" y="119" width="364" height="847"/>
+                            <rect key="frame" x="25" y="144" width="364" height="822"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -276,7 +276,7 @@
                         </button>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="jqc-eT-9Lf"/>
-                    <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
+                    <edgeInsets key="layoutMargins" top="50" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
             <point key="canvasLocation" x="3477" y="-1404"/>
@@ -284,7 +284,7 @@
         <!--Auth View Controller-->
         <scene sceneID="WqO-iH-6bZ">
             <objects>
-                <viewController id="Ph6-YE-ngi" customClass="AuthViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" id="Ph6-YE-ngi" customClass="AuthViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rLa-84-6EY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,6 +303,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Daa-z3-wNn"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="formStackView" destination="cwh-gc-RSg" id="31h-Wj-Tv0"/>
                         <outlet property="loginButton" destination="ViS-Q0-McR" id="tJX-Y2-rP8"/>
@@ -318,14 +319,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NW3-oO-FPG">
-                            <rect key="frame" x="25" y="69" width="364" height="25"/>
+                            <rect key="frame" x="25" y="94" width="364" height="25"/>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="nIu-m4-EmD"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти в магазин" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-At-BAk">
-                            <rect key="frame" x="25" y="119" width="364" height="597"/>
+                            <rect key="frame" x="25" y="144" width="364" height="572"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -390,7 +391,7 @@
                         </label>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="RG0-2a-4Gr"/>
-                    <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
+                    <edgeInsets key="layoutMargins" top="50" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
             <point key="canvasLocation" x="2691" y="138"/>
@@ -398,7 +399,7 @@
         <!--Edit Data View Controller-->
         <scene sceneID="cDf-iC-xEo">
             <objects>
-                <viewController id="kZc-A1-Hes" customClass="EditDataViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditDataViewController" id="kZc-A1-Hes" customClass="EditDataViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlc-5g-0rL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -436,14 +437,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="aKG-ue-BLS">
-                            <rect key="frame" x="25" y="69" width="364" height="25"/>
+                            <rect key="frame" x="25" y="94" width="364" height="25"/>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="LXG-nF-bHz"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Редактировать персональные данные" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8O-pS-cRA">
-                            <rect key="frame" x="25" y="119" width="364" height="121"/>
+                            <rect key="frame" x="25" y="144" width="364" height="96"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -549,7 +550,7 @@
                         </label>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="Ke7-1M-yUS"/>
-                    <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
+                    <edgeInsets key="layoutMargins" top="50" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
             <point key="canvasLocation" x="4923" y="138"/>
@@ -576,6 +577,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZvS-cN-pUF"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="editDataButton" destination="1ZU-lT-jte" id="kb6-n0-bmP"/>
                         <outlet property="formStackView" destination="bKu-j5-fGR" id="ytT-Cn-9eu"/>
@@ -590,14 +592,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="4MY-YY-MD7">
-                            <rect key="frame" x="25" y="69" width="364" height="25"/>
+                            <rect key="frame" x="25" y="94" width="364" height="25"/>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="twa-EY-TD3"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добрый день, Ярослав!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsa-ay-Wbq">
-                            <rect key="frame" x="25" y="119" width="364" height="621"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здравствуй, дружок!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsa-ay-Wbq">
+                            <rect key="frame" x="25" y="144" width="364" height="596"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -618,7 +620,7 @@
                                 <constraint firstAttribute="height" constant="1" id="xbJ-EO-vwc"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чем Вы хотели бы заняться сегодня?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jie-Er-8cn">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чем ты хотел бы заняться сегодня?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jie-Er-8cn">
                             <rect key="frame" x="25" y="891" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="LyF-Pu-Quv"/>
@@ -669,7 +671,7 @@
                         </button>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="k3t-gO-JCX"/>
-                    <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
+                    <edgeInsets key="layoutMargins" top="50" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
             <point key="canvasLocation" x="3477" y="138"/>
@@ -677,7 +679,7 @@
         <!--Edit Data Success View Controller-->
         <scene sceneID="eSW-SY-kRm">
             <objects>
-                <viewController id="tzJ-gb-Dz1" customClass="EditDataSuccessViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditDataSuccessViewController" id="tzJ-gb-Dz1" customClass="EditDataSuccessViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eka-0j-gtH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -708,14 +710,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hiZ-qB-tio">
-                            <rect key="frame" x="25" y="69" width="364" height="25"/>
+                            <rect key="frame" x="25" y="94" width="364" height="25"/>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="hG4-CB-exA"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваши персональные данные сохранены, Ярослав!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASv-sr-Xev">
-                            <rect key="frame" x="25" y="119" width="364" height="872"/>
+                            <rect key="frame" x="25" y="144" width="364" height="847"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -752,18 +754,17 @@
                         </button>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="438-iR-YcK"/>
-                    <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
+                    <edgeInsets key="layoutMargins" top="50" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
             <point key="canvasLocation" x="5690" y="138"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Войти в магазин-->
         <scene sceneID="AYQ-57-Y3p">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ny9-Zz-GX6" sceneMemberID="viewController">
+                <navigationController title="Войти в магазин" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ny9-Zz-GX6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T82-DN-cPV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="T82-DN-cPV">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -33,6 +33,8 @@ class WelcomeScreenViewController: UIViewController {
     }
     
     @IBAction func logoutButtonTapped(_ sender: Any) {
+        let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
+        navigationController?.pushViewController(authViewController, animated: true)
     }
     
     // MARK: -- ViewController methods.
