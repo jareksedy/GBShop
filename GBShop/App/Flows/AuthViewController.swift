@@ -109,10 +109,15 @@ class AuthViewController: UIViewController {
         
         factory.login(user: user) { response in
             DispatchQueue.main.async {
+                logging(LogMessage.funcStart)
+                logging(response)
+                
                 switch response.result {
                 case .success(let success): success.result == 1 ? self.proceedToWelcomeScreen() : self.showError(success.errorMessage ?? "Неизвестная ошибка.")
                 case .failure(let error): self.showError(error.localizedDescription)
                 }
+                
+                logging(LogMessage.funcEnd)
             }
         }
     }
