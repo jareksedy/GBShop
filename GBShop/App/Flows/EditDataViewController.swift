@@ -94,8 +94,43 @@ class EditDataViewController: UIViewController {
         saveDataButton.isEnabled = true
     }
     
+    // MARK: -- Success & Error Messages.
+    private func showSuccessScreen() {
+        let editDataSuccessViewController = self.storyboard?.instantiateViewController(withIdentifier: "EditDataSuccessViewController") as! EditDataSuccessViewController
+        
+        editDataSuccessViewController.modalPresentationStyle = .fullScreen
+        self.present(editDataSuccessViewController, animated: true, completion: nil)
+    }
+    
+    private func showError(_ errorMessage: String) {
+        let alert = UIAlertController(title: "Ошибка сервера", message: errorMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     // MARK: -- Actions.
     @IBAction func saveDataButtonTapped(_ sender: Any) {
+        saveDataButton.backgroundColor = UIColor.opaqueSeparator
+        saveDataButton.isEnabled = false
+        
+        let factory = requestFactory.makeChangeUserDataRequestFactory()
+        let user = User(id: 123,
+                        login: loginTextField.text,
+                        password: passwordTextField.text,
+                        email: emailTextField.text,
+                        gender: genderSegmentedControl.selectedSegmentIndex == 0 ? "M" : "F",
+                        bio: bioTextField.text,
+                        name: firstNameTextField.text,
+                        lastname: lastNameTextField.text)
+        
+        factory.changeUserData(user: user) { response in
+            DispatchQueue.main.async {
+                switch response.result {
+                case .success(let success): success.result == 1 ? self.showSuccessScreen() : self.showError(success.errorMessage ?? "Неизвестная ошибка.")
+                case .failure(let error): self.showError(error.localizedDescription)
+                }
+            }
+        }
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
