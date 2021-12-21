@@ -325,13 +325,13 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти в магазин" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-At-BAk">
-                            <rect key="frame" x="25" y="119" width="364" height="697"/>
+                            <rect key="frame" x="25" y="119" width="364" height="597"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Xm-IM-wUL">
-                            <rect key="frame" x="25" y="841" width="364" height="75"/>
+                            <rect key="frame" x="25" y="741" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="rSy-TM-X4V"/>
                             </constraints>
@@ -339,7 +339,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-oe-2Aa">
-                            <rect key="frame" x="25" y="941" width="364" height="75"/>
+                            <rect key="frame" x="25" y="841" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="Uav-c2-HnO"/>
                             </constraints>
@@ -347,7 +347,7 @@
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-Q0-McR">
-                            <rect key="frame" x="25" y="1041" width="364" height="75"/>
+                            <rect key="frame" x="25" y="941" width="364" height="75"/>
                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="nS6-68-hAE"/>
@@ -367,7 +367,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtl-M9-Wq5">
-                            <rect key="frame" x="25" y="1141" width="364" height="25"/>
+                            <rect key="frame" x="25" y="1041" width="364" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="dOy-9Y-iq5"/>
                             </constraints>
@@ -379,6 +379,15 @@
                                 <action selector="signupButtonTapped:" destination="Ph6-YE-ngi" eventType="touchUpInside" id="rnu-dW-ajk"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подсказка: попробуйте войти с логином jareksedy и паролем mypass." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6y-Eo-k11">
+                            <rect key="frame" x="25" y="1091" width="364" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="oS6-W0-Tzx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="RG0-2a-4Gr"/>
                     <edgeInsets key="layoutMargins" top="25" left="25" bottom="0.0" right="25"/>
