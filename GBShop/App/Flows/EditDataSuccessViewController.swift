@@ -26,6 +26,8 @@ class EditDataSuccessViewController: UIViewController {
     }
     // MARK: -- Actions.
     @IBAction func proceedButtonTapped(_ sender: Any) {
+        let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
+        navigationController?.pushViewController(authViewController, animated: true)
     }
     
     // MARK: -- ViewController methods.

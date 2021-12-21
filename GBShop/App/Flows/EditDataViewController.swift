@@ -97,9 +97,7 @@ class EditDataViewController: UIViewController {
     // MARK: -- Success & Error Messages.
     private func showSuccessScreen() {
         let editDataSuccessViewController = self.storyboard?.instantiateViewController(withIdentifier: "EditDataSuccessViewController") as! EditDataSuccessViewController
-        
-        editDataSuccessViewController.modalPresentationStyle = .fullScreen
-        self.present(editDataSuccessViewController, animated: true, completion: nil)
+        navigationController?.pushViewController(editDataSuccessViewController, animated: true)
     }
     
     private func showError(_ errorMessage: String) {
