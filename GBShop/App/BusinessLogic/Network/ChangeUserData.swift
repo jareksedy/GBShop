@@ -44,6 +44,8 @@ extension ChangeUserData {
                 "login": user.login ?? "",
                 "password": user.password ?? "",
                 "email": user.email ?? "",
+                "name": user.name ?? "",
+                "lastname": user.lastname ?? "",
                 "gender": user.gender ?? "",
                 "creditCard": user.creditCard ?? "",
                 "bio": user.bio ?? ""

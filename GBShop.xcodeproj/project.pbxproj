@@ -17,6 +17,8 @@
 		CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */; };
 		CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */; };
 		CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */; };
+		CA4E26CC276DE931006947A4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E26CB276DE931006947A4 /* SignupViewController.swift */; };
+		CA51E3CA277246D900CD2FFB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51E3C9277246D900CD2FFB /* Logger.swift */; };
 		CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */; };
 		CA8498B62765BD0C00F6EB08 /* CatalogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */; };
 		CA8498B82765C07300F6EB08 /* GoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B72765C07300F6EB08 /* GoodResponse.swift */; };
@@ -29,6 +31,11 @@
 		CA875851275BE19600C60E07 /* GetGoodRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */; };
 		CA875853275BE1E500C60E07 /* GetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875852275BE1E500C60E07 /* GetCatalog.swift */; };
 		CA875855275BE35D00C60E07 /* GetGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA875854275BE35D00C60E07 /* GetGood.swift */; };
+		CA97005F276E53130042EE91 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97005E276E53130042EE91 /* AuthViewController.swift */; };
+		CA970061276E5B390042EE91 /* EditDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA970060276E5B390042EE91 /* EditDataViewController.swift */; };
+		CA970063276E637F0042EE91 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA970062276E637F0042EE91 /* WelcomeScreenViewController.swift */; };
+		CA970065276E6A0D0042EE91 /* EditDataSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA970064276E6A0D0042EE91 /* EditDataSuccessViewController.swift */; };
+		CAAD106A276F11CA007990E3 /* SignupSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAD1069276F11CA007990E3 /* SignupSuccessViewController.swift */; };
 		CAC77AE12769022F00FCA40C /* CartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC77AE02769022E00FCA40C /* CartRequest.swift */; };
 		CAC77AE32769024900FCA40C /* CartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC77AE22769024900FCA40C /* CartResponse.swift */; };
 		CAC77AE5276902AD00FCA40C /* CartRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC77AE4276902AD00FCA40C /* CartRequestFactory.swift */; };
@@ -81,6 +88,8 @@
 		CA347ED82757DE63001BAEC1 /* ChangeUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataResult.swift; sourceTree = "<group>"; };
 		CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
 		CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
+		CA4E26CB276DE931006947A4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		CA51E3C9277246D900CD2FFB /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResponse.swift; sourceTree = "<group>"; };
 		CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogResponse.swift; sourceTree = "<group>"; };
 		CA8498B72765C07300F6EB08 /* GoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodResponse.swift; sourceTree = "<group>"; };
@@ -93,6 +102,11 @@
 		CA875850275BE19600C60E07 /* GetGoodRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoodRequestFactory.swift; sourceTree = "<group>"; };
 		CA875852275BE1E500C60E07 /* GetCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatalog.swift; sourceTree = "<group>"; };
 		CA875854275BE35D00C60E07 /* GetGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGood.swift; sourceTree = "<group>"; };
+		CA97005E276E53130042EE91 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		CA970060276E5B390042EE91 /* EditDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataViewController.swift; sourceTree = "<group>"; };
+		CA970062276E637F0042EE91 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		CA970064276E6A0D0042EE91 /* EditDataSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataSuccessViewController.swift; sourceTree = "<group>"; };
+		CAAD1069276F11CA007990E3 /* SignupSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSuccessViewController.swift; sourceTree = "<group>"; };
 		CAC77AE02769022E00FCA40C /* CartRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRequest.swift; sourceTree = "<group>"; };
 		CAC77AE22769024900FCA40C /* CartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartResponse.swift; sourceTree = "<group>"; };
 		CAC77AE4276902AD00FCA40C /* CartRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRequestFactory.swift; sourceTree = "<group>"; };
@@ -238,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				CAD4850A275743C000F2D941 /* Network */,
+				CA51E3C9277246D900CD2FFB /* Logger.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -295,6 +310,12 @@
 			children = (
 				CAD485062757330D00F2D941 /* GBShop.storyboard */,
 				CAD485082757376F00F2D941 /* GBShopViewController.swift */,
+				CA4E26CB276DE931006947A4 /* SignupViewController.swift */,
+				CA97005E276E53130042EE91 /* AuthViewController.swift */,
+				CA970060276E5B390042EE91 /* EditDataViewController.swift */,
+				CA970062276E637F0042EE91 /* WelcomeScreenViewController.swift */,
+				CA970064276E6A0D0042EE91 /* EditDataSuccessViewController.swift */,
+				CAAD1069276F11CA007990E3 /* SignupSuccessViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -441,6 +462,7 @@
 				CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */,
 				CA8498BA2765C64700F6EB08 /* ReviewResponse.swift in Sources */,
 				CA8498B82765C07300F6EB08 /* GoodResponse.swift in Sources */,
+				CA970063276E637F0042EE91 /* WelcomeScreenViewController.swift in Sources */,
 				CAD485172757487600F2D941 /* RequestRouter.swift in Sources */,
 				CAD485152757485000F2D941 /* AbstractRequestFactory.swift in Sources */,
 				CA875855275BE35D00C60E07 /* GetGood.swift in Sources */,
@@ -449,18 +471,24 @@
 				CAC77AE5276902AD00FCA40C /* CartRequestFactory.swift in Sources */,
 				CAD485112757480200F2D941 /* ErrorParser.swift in Sources */,
 				CAD485132757482300F2D941 /* ResponseCodable.swift in Sources */,
+				CA970065276E6A0D0042EE91 /* EditDataSuccessViewController.swift in Sources */,
 				CA347ED7275771E2001BAEC1 /* Signup.swift in Sources */,
+				CAAD106A276F11CA007990E3 /* SignupSuccessViewController.swift in Sources */,
 				CA2824802751E3EF0097488F /* AppDelegate.swift in Sources */,
 				CAC77AE7276903FC00FCA40C /* Cart.swift in Sources */,
 				CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */,
 				CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */,
 				CA8498B62765BD0C00F6EB08 /* CatalogResponse.swift in Sources */,
+				CA51E3CA277246D900CD2FFB /* Logger.swift in Sources */,
 				CAD4851C2757494100F2D941 /* Auth.swift in Sources */,
 				CAD4851A2757492200F2D941 /* AuthRequestFactory.swift in Sources */,
 				CA875853275BE1E500C60E07 /* GetCatalog.swift in Sources */,
+				CA970061276E5B390042EE91 /* EditDataViewController.swift in Sources */,
 				CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */,
 				CA8498C02765CC7200F6EB08 /* ReviewRequest.swift in Sources */,
+				CA4E26CC276DE931006947A4 /* SignupViewController.swift in Sources */,
 				CAC77AE12769022F00FCA40C /* CartRequest.swift in Sources */,
+				CA97005F276E53130042EE91 /* AuthViewController.swift in Sources */,
 				CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */,
 				CAC77AE32769024900FCA40C /* CartResponse.swift in Sources */,
 				CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */,
@@ -644,6 +672,8 @@
 				INFOPLIST_FILE = GBShop/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = GBShop;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -671,6 +701,8 @@
 				INFOPLIST_FILE = GBShop/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = GBShop;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
