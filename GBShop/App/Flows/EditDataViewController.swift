@@ -20,6 +20,9 @@ class EditDataViewController: UIViewController {
     @IBOutlet weak var bioTextField: UITextField!
     
     @IBOutlet weak var saveDataButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
+    
+    let requestFactory = RequestFactory()
     
     private func setConstraints() {
         self.scrollView.addSubview(formStackView)
@@ -34,9 +37,6 @@ class EditDataViewController: UIViewController {
     }
     
     private func setupControls() {
-        saveDataButton.backgroundColor = UIColor.opaqueSeparator
-        saveDataButton.isEnabled = false
-        
         [loginTextField, passwordTextField, firstNameTextField, lastNameTextField, emailTextField, bioTextField].forEach {
             $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
         }
@@ -96,6 +96,11 @@ class EditDataViewController: UIViewController {
     
     // MARK: -- Actions.
     @IBAction func saveDataButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        let welcomeScreenViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeScreenViewController") as! WelcomeScreenViewController
+        navigationController?.pushViewController(welcomeScreenViewController, animated: true)
     }
     
     // MARK: -- ViewController methods.

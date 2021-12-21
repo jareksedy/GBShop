@@ -30,6 +30,8 @@ class WelcomeScreenViewController: UIViewController {
     
     // MARK: -- Actions.
     @IBAction func editDataButtonTapped(_ sender: Any) {
+        let editDataViewController = self.storyboard?.instantiateViewController(withIdentifier: "EditDataViewController") as! EditDataViewController
+        navigationController?.pushViewController(editDataViewController, animated: true)
     }
     
     @IBAction func logoutButtonTapped(_ sender: Any) {

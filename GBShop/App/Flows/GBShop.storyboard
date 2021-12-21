@@ -284,7 +284,7 @@
         <!--Auth View Controller-->
         <scene sceneID="WqO-iH-6bZ">
             <objects>
-                <viewController storyboardIdentifier="AuthViewController" id="Ph6-YE-ngi" customClass="AuthViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" modalTransitionStyle="flipHorizontal" id="Ph6-YE-ngi" customClass="AuthViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rLa-84-6EY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -331,7 +331,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Xm-IM-wUL">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jareksedy" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Xm-IM-wUL">
                             <rect key="frame" x="25" y="741" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="rSy-TM-X4V"/>
@@ -420,6 +420,7 @@
                     <navigationItem key="navigationItem" id="sGS-ca-fxW"/>
                     <connections>
                         <outlet property="bioTextField" destination="ce4-TX-LsS" id="QsZ-5g-8O2"/>
+                        <outlet property="cancelButton" destination="Hdb-4P-Yq0" id="0rp-eU-jTJ"/>
                         <outlet property="emailTextField" destination="InR-JR-uwa" id="czr-Ia-lwg"/>
                         <outlet property="firstNameTextField" destination="3JB-0d-Eyj" id="7Pd-ff-qlK"/>
                         <outlet property="formStackView" destination="oav-58-FTM" id="876-Jj-TZR"/>
@@ -444,13 +445,13 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Редактировать персональные данные" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8O-pS-cRA">
-                            <rect key="frame" x="25" y="144" width="364" height="96"/>
+                            <rect key="frame" x="25" y="144" width="364" height="46"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jareksedy" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I03-Am-rQ5">
-                            <rect key="frame" x="25" y="265" width="364" height="75"/>
+                            <rect key="frame" x="25" y="215" width="364" height="75"/>
                             <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                             <accessibility key="accessibilityConfiguration">
                                 <bool key="isElement" value="NO"/>
@@ -461,8 +462,8 @@
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-JH-BDI">
-                            <rect key="frame" x="25" y="365" width="364" height="75"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mypass" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-JH-BDI">
+                            <rect key="frame" x="25" y="315" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="SXq-vt-EiL"/>
                             </constraints>
@@ -470,30 +471,30 @@
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jP-BW-ddZ">
-                            <rect key="frame" x="25" y="465" width="364" height="1"/>
+                            <rect key="frame" x="25" y="415" width="364" height="1"/>
                             <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="Kan-pB-N4c"/>
                             </constraints>
                         </view>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваше имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3JB-0d-Eyj">
-                            <rect key="frame" x="25" y="491" width="364" height="75"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ярослав" borderStyle="roundedRect" placeholder="Ваше имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3JB-0d-Eyj">
+                            <rect key="frame" x="25" y="441" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="aWx-F2-qvA"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваша фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWs-y4-O3N">
-                            <rect key="frame" x="25" y="591" width="364" height="75"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Седышев" borderStyle="roundedRect" placeholder="Ваша фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWs-y4-O3N">
+                            <rect key="frame" x="25" y="541" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="oko-jZ-xtQ"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Электронная почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="InR-JR-uwa">
-                            <rect key="frame" x="25" y="691" width="364" height="75"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jareksedy@icloud.com" borderStyle="roundedRect" placeholder="Электронная почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="InR-JR-uwa">
+                            <rect key="frame" x="25" y="641" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="blS-j3-53Y"/>
                             </constraints>
@@ -501,7 +502,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RDW-Jw-0vJ">
-                            <rect key="frame" x="25" y="791" width="364" height="76"/>
+                            <rect key="frame" x="25" y="741" width="364" height="76"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="AhA-GB-C1v"/>
                             </constraints>
@@ -511,8 +512,8 @@
                             </segments>
                             <color key="selectedSegmentTintColor" systemColor="systemOrangeColor"/>
                         </segmentedControl>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="О себе" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ce4-TX-LsS">
-                            <rect key="frame" x="25" y="891" width="364" height="75"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="И о себе ни хрена..." borderStyle="roundedRect" placeholder="О себе" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ce4-TX-LsS">
+                            <rect key="frame" x="25" y="841" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="gBJ-33-Bd3"/>
                             </constraints>
@@ -520,7 +521,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81n-5K-mR6">
-                            <rect key="frame" x="25" y="991" width="364" height="75"/>
+                            <rect key="frame" x="25" y="941" width="364" height="75"/>
                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="2uL-Kk-b7v"/>
@@ -537,6 +538,19 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="saveDataButtonTapped:" destination="kZc-A1-Hes" eventType="touchUpInside" id="NXp-Ur-dJB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdb-4P-Yq0">
+                            <rect key="frame" x="25" y="1041" width="364" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="CBV-2L-Gja"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Отменить"/>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="kZc-A1-Hes" eventType="touchUpInside" id="Do3-Fs-pUU"/>
+                                <action selector="clearButtonTapped:" destination="399-9T-zhE" eventType="touchUpInside" id="eTD-jj-RGk"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Будьте предельно осторожны при изменении пароля и адреса электронной почты." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnd-7L-4Ug">
