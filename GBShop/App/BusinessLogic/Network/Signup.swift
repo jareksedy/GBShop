@@ -43,6 +43,8 @@ extension Signup {
                 "id": user.id ?? 0,
                 "login": user.login ?? "",
                 "password": user.password ?? "",
+                "name": user.name ?? "",
+                "lastname": user.lastname ?? "",
                 "email": user.email ?? "",
                 "gender": user.gender ?? "",
                 "creditCard": user.creditCard ?? "",

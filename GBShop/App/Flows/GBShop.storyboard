@@ -548,7 +548,7 @@
         <!--Welcome Screen View Controller-->
         <scene sceneID="ya7-hr-LDa">
             <objects>
-                <viewController id="aHv-cI-VLP" customClass="WelcomeScreenViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeScreenViewController" id="aHv-cI-VLP" customClass="WelcomeScreenViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bNM-Ng-mIr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

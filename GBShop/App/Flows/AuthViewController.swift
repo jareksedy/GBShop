@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class AuthViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -16,6 +17,8 @@ class AuthViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
+    
+    let requestFactory = RequestFactory()
     
     private func setConstraints() {
         self.scrollView.addSubview(formStackView)
@@ -87,8 +90,31 @@ class AuthViewController: UIViewController {
         loginButton.isEnabled = true
     }
     
+    // MARK: -- Success & Error Messages.
+    private func proceedToWelcomeScreen() {
+        let welcomeScreenViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeScreenViewController") as! WelcomeScreenViewController
+        navigationController?.pushViewController(welcomeScreenViewController, animated: true)
+    }
+    
+    private func showError(_ errorMessage: String) {
+        let alert = UIAlertController(title: "Ошибка авторизации", message: errorMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     // MARK: -- Actions.
     @IBAction func loginButtonTapped(_ sender: Any) {
+        let factory = requestFactory.makeAuthRequestFactory()
+        let user = User(login: loginTextField.text, password: passwordTextField.text)
+        
+        factory.login(user: user) { response in
+            DispatchQueue.main.async {
+                switch response.result {
+                case .success(let success): success.result == 1 ? self.proceedToWelcomeScreen() : self.showError(success.errorMessage ?? "Неизвестная ошибка.")
+                case .failure(let error): self.showError(error.localizedDescription)
+                }
+            }
+        }
     }
     
     @IBAction func signupButtonTapped(_ sender: Any) {
