@@ -54,6 +54,8 @@
 		CAD4851E2757494C00F2D941 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4851D2757494C00F2D941 /* RequestFactory.swift */; };
 		CAD485222757499900F2D941 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485212757499900F2D941 /* User.swift */; };
 		CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4852727576F1500F2D941 /* SignupRequestFactory.swift */; };
+		CAE622F6277787CB0029601C /* CatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE622F5277787CB0029601C /* CatalogTableViewController.swift */; };
+		CAE622F8277787E70029601C /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE622F7277787E70029601C /* CatalogTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		CAD4851D2757494C00F2D941 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		CAD485212757499900F2D941 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CAD4852727576F1500F2D941 /* SignupRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequestFactory.swift; sourceTree = "<group>"; };
+		CAE622F5277787CB0029601C /* CatalogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewController.swift; sourceTree = "<group>"; };
+		CAE622F7277787E70029601C /* CatalogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,15 +313,57 @@
 			isa = PBXGroup;
 			children = (
 				CAD485062757330D00F2D941 /* GBShop.storyboard */,
+				CAE622FB2777880C0029601C /* Auth */,
+				CAE622FA277787FF0029601C /* Signup */,
+				CAE622F9277787EE0029601C /* Catalog */,
+				CAE622FD277788280029601C /* WelcomeScreen */,
+				CAE622FC277788180029601C /* EditPersonalData */,
 				CAD485082757376F00F2D941 /* GBShopViewController.swift */,
-				CA4E26CB276DE931006947A4 /* SignupViewController.swift */,
-				CA97005E276E53130042EE91 /* AuthViewController.swift */,
-				CA970060276E5B390042EE91 /* EditDataViewController.swift */,
-				CA970062276E637F0042EE91 /* WelcomeScreenViewController.swift */,
-				CA970064276E6A0D0042EE91 /* EditDataSuccessViewController.swift */,
-				CAAD1069276F11CA007990E3 /* SignupSuccessViewController.swift */,
 			);
 			path = Flows;
+			sourceTree = "<group>";
+		};
+		CAE622F9277787EE0029601C /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				CAE622F5277787CB0029601C /* CatalogTableViewController.swift */,
+				CAE622F7277787E70029601C /* CatalogTableViewCell.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		CAE622FA277787FF0029601C /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				CAAD1069276F11CA007990E3 /* SignupSuccessViewController.swift */,
+				CA4E26CB276DE931006947A4 /* SignupViewController.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		CAE622FB2777880C0029601C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CA97005E276E53130042EE91 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CAE622FC277788180029601C /* EditPersonalData */ = {
+			isa = PBXGroup;
+			children = (
+				CA970064276E6A0D0042EE91 /* EditDataSuccessViewController.swift */,
+				CA970060276E5B390042EE91 /* EditDataViewController.swift */,
+			);
+			path = EditPersonalData;
+			sourceTree = "<group>";
+		};
+		CAE622FD277788280029601C /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CA970062276E637F0042EE91 /* WelcomeScreenViewController.swift */,
+			);
+			path = WelcomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,6 +513,7 @@
 				CAD485152757485000F2D941 /* AbstractRequestFactory.swift in Sources */,
 				CA875855275BE35D00C60E07 /* GetGood.swift in Sources */,
 				CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */,
+				CAE622F6277787CB0029601C /* CatalogTableViewController.swift in Sources */,
 				CA875851275BE19600C60E07 /* GetGoodRequestFactory.swift in Sources */,
 				CAC77AE5276902AD00FCA40C /* CartRequestFactory.swift in Sources */,
 				CAD485112757480200F2D941 /* ErrorParser.swift in Sources */,
@@ -480,6 +527,7 @@
 				CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */,
 				CA8498B62765BD0C00F6EB08 /* CatalogResponse.swift in Sources */,
 				CA51E3CA277246D900CD2FFB /* Logger.swift in Sources */,
+				CAE622F8277787E70029601C /* CatalogTableViewCell.swift in Sources */,
 				CAD4851C2757494100F2D941 /* Auth.swift in Sources */,
 				CAD4851A2757492200F2D941 /* AuthRequestFactory.swift in Sources */,
 				CA875853275BE1E500C60E07 /* GetCatalog.swift in Sources */,
