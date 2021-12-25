@@ -257,7 +257,7 @@
         <!--Auth View Controller-->
         <scene sceneID="WqO-iH-6bZ">
             <objects>
-                <viewController storyboardIdentifier="AuthViewController" modalTransitionStyle="flipHorizontal" id="Ph6-YE-ngi" customClass="AuthViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="Ph6-YE-ngi" customClass="AuthViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rLa-84-6EY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -372,13 +372,13 @@
         <!--Edit Data View Controller-->
         <scene sceneID="cDf-iC-xEo">
             <objects>
-                <viewController storyboardIdentifier="EditDataViewController" id="kZc-A1-Hes" customClass="EditDataViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditDataViewController" modalPresentationStyle="fullScreen" id="kZc-A1-Hes" customClass="EditDataViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlc-5g-0rL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="k55-wG-DPN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AMR-wF-agW"/>
@@ -545,13 +545,13 @@
         <!--Welcome Screen View Controller-->
         <scene sceneID="ya7-hr-LDa">
             <objects>
-                <viewController storyboardIdentifier="WelcomeScreenViewController" id="aHv-cI-VLP" customClass="WelcomeScreenViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeScreenViewController" modalPresentationStyle="fullScreen" id="aHv-cI-VLP" customClass="WelcomeScreenViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bNM-Ng-mIr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="aj2-D5-c7a">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mVj-6z-pYe"/>
@@ -666,13 +666,13 @@
         <!--Edit Data Success View Controller-->
         <scene sceneID="eSW-SY-kRm">
             <objects>
-                <viewController storyboardIdentifier="EditDataSuccessViewController" id="tzJ-gb-Dz1" customClass="EditDataSuccessViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditDataSuccessViewController" modalPresentationStyle="fullScreen" id="tzJ-gb-Dz1" customClass="EditDataSuccessViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eka-0j-gtH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="fn6-vL-phJ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fgs-TG-2Sc"/>
