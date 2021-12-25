@@ -107,6 +107,9 @@ class AuthViewController: UIViewController {
         let factory = requestFactory.makeAuthRequestFactory()
         let user = User(login: loginTextField.text, password: passwordTextField.text)
         
+        loginButton.backgroundColor = UIColor.opaqueSeparator
+        loginButton.isEnabled = false
+        
         factory.login(user: user) { response in
             DispatchQueue.main.async {
                 logging(LogMessage.funcStart)
