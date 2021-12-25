@@ -369,6 +369,82 @@
             </objects>
             <point key="canvasLocation" x="2691" y="138"/>
         </scene>
+        <!--Catalog Table View Controller-->
+        <scene sceneID="OTZ-Sv-7gQ">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="enn-io-htr" customClass="CatalogTableViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cRe-cr-BZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatalogCell" rowHeight="225" id="Qdx-7M-fEI" customClass="CatalogTableViewCell" customModule="GBShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="225"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qdx-7M-fEI" id="I5k-wk-TB8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наименование товара" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90N-Fl-ZMu">
+                                            <rect key="frame" x="20" y="21" width="374" height="38.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCV-Ot-n8c">
+                                            <rect key="frame" x="20" y="69.5" width="125" height="125"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="125" id="2kg-sj-TXZ"/>
+                                                <constraint firstAttribute="width" constant="125" id="Z3h-vI-Kv1"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Краткое описание нашего расчудесного товара" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-iC-sGB">
+                                            <rect key="frame" x="155" y="69.5" width="229" height="33.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29 900 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvg-KL-ZU6">
+                                            <rect key="frame" x="155" y="128" width="229" height="38.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="uvg-KL-ZU6" firstAttribute="leading" secondItem="TCV-Ot-n8c" secondAttribute="trailing" constant="10" id="Awv-sB-ysz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="90N-Fl-ZMu" secondAttribute="trailing" id="D1a-7u-SU2"/>
+                                        <constraint firstItem="TCV-Ot-n8c" firstAttribute="top" secondItem="90N-Fl-ZMu" secondAttribute="bottom" constant="10" id="Hiy-9e-p2x"/>
+                                        <constraint firstItem="d1X-iC-sGB" firstAttribute="leading" secondItem="TCV-Ot-n8c" secondAttribute="trailing" constant="10" id="HtD-UU-2k0"/>
+                                        <constraint firstItem="uvg-KL-ZU6" firstAttribute="top" secondItem="d1X-iC-sGB" secondAttribute="bottom" constant="25" id="Kuw-Id-VD0"/>
+                                        <constraint firstItem="90N-Fl-ZMu" firstAttribute="top" secondItem="I5k-wk-TB8" secondAttribute="topMargin" constant="10" id="SN1-Wr-QH6"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="uvg-KL-ZU6" secondAttribute="trailing" constant="10" id="XnR-Bx-VTJ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="d1X-iC-sGB" secondAttribute="trailing" constant="10" id="Yyt-WR-Xkx"/>
+                                        <constraint firstItem="TCV-Ot-n8c" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leadingMargin" id="rhD-uY-WBa"/>
+                                        <constraint firstItem="d1X-iC-sGB" firstAttribute="top" secondItem="90N-Fl-ZMu" secondAttribute="bottom" constant="10" id="wgT-eX-Pzo"/>
+                                        <constraint firstItem="90N-Fl-ZMu" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leadingMargin" id="xRk-bl-uXa"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itemDescriptionLabel" destination="d1X-iC-sGB" id="GrN-ai-Hrg"/>
+                                    <outlet property="itemImage" destination="TCV-Ot-n8c" id="Adt-Ze-wdy"/>
+                                    <outlet property="itemNameLabel" destination="90N-Fl-ZMu" id="DKm-T9-LpD"/>
+                                    <outlet property="itemPriceLabel" destination="uvg-KL-ZU6" id="PxJ-J2-cqY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="enn-io-htr" id="dis-nN-ZPQ"/>
+                            <outlet property="delegate" destination="enn-io-htr" id="zfi-x5-dGD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="E0V-dj-8sW"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogQ-Bo-ner" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3476.811594202899" y="137.94642857142856"/>
+        </scene>
         <!--Edit Data View Controller-->
         <scene sceneID="cDf-iC-xEo">
             <objects>
@@ -661,7 +737,7 @@
                     <edgeInsets key="layoutMargins" top="50" left="25" bottom="0.0" right="25"/>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="3477" y="138"/>
+            <point key="canvasLocation" x="741" y="-1404"/>
         </scene>
         <!--Edit Data Success View Controller-->
         <scene sceneID="eSW-SY-kRm">
@@ -746,48 +822,24 @@
             </objects>
             <point key="canvasLocation" x="5690" y="138"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="gN5-yj-4Vx">
-            <objects>
-                <tableViewController id="YSX-EU-82h" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LMq-pJ-Vy8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4ce-UZ-4eI">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4ce-UZ-4eI" id="hRX-vS-Dgs">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="YSX-EU-82h" id="lbb-Tp-ytT"/>
-                            <outlet property="delegate" destination="YSX-EU-82h" id="os7-Ob-Rg6"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6LU-mL-0zV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="742" y="138"/>
-        </scene>
         <!--Войти в магазин-->
         <scene sceneID="AYQ-57-Y3p">
             <objects>
-                <navigationController title="Войти в магазин" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ny9-Zz-GX6" sceneMemberID="viewController">
+                <navigationController title="Войти в магазин" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="Ny9-Zz-GX6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="T82-DN-cPV">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hzE-Op-AbQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Ph6-YE-ngi" kind="relationship" relationship="rootViewController" id="25T-cK-aSx"/>
                         <segue destination="aHv-cI-VLP" kind="show" identifier="toWelcomeScreen" id="PkS-tc-wQD"/>
                         <segue destination="kZc-A1-Hes" kind="show" identifier="toEditScreen" id="AXu-JV-IP6"/>
                         <segue destination="tzJ-gb-Dz1" kind="show" identifier="toEditSuccessScreen" id="Ub0-w0-LiP"/>
+                        <segue destination="enn-io-htr" kind="show" identifier="toCatalog" id="9H0-g8-lDj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZZ-Wk-XTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

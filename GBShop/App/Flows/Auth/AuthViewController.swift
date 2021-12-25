@@ -96,6 +96,11 @@ class AuthViewController: UIViewController {
         navigationController?.pushViewController(welcomeScreenViewController, animated: true)
     }
     
+    private func proceedToCatalog() {
+        let catalogTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "CatalogTableViewController") as! CatalogTableViewController
+        navigationController?.pushViewController(catalogTableViewController, animated: true)
+    }
+    
     private func showError(_ errorMessage: String) {
         let alert = UIAlertController(title: "Ошибка авторизации", message: errorMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
@@ -116,7 +121,7 @@ class AuthViewController: UIViewController {
                 logging(response)
                 
                 switch response.result {
-                case .success(let success): success.result == 1 ? self.proceedToWelcomeScreen() : self.showError(success.errorMessage ?? "Неизвестная ошибка.")
+                case .success(let success): success.result == 1 ? self.proceedToCatalog() : self.showError(success.errorMessage ?? "Неизвестная ошибка.")
                 case .failure(let error): self.showError(error.localizedDescription)
                 }
                 
