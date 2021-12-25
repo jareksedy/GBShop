@@ -56,6 +56,7 @@
 		CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4852727576F1500F2D941 /* SignupRequestFactory.swift */; };
 		CAE622F6277787CB0029601C /* CatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE622F5277787CB0029601C /* CatalogTableViewController.swift */; };
 		CAE622F8277787E70029601C /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE622F7277787E70029601C /* CatalogTableViewCell.swift */; };
+		CAE62300277793720029601C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CAE622FF277793720029601C /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD4850F2757447600F2D941 /* Alamofire in Frameworks */,
+				CAE62300277793720029601C /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +386,7 @@
 			name = GBShop;
 			packageProductDependencies = (
 				CAD4850E2757447600F2D941 /* Alamofire */,
+				CAE622FF277793720029601C /* AlamofireImage */,
 			);
 			productName = GBShop;
 			productReference = CA28247C2751E3EF0097488F /* GBShop.app */;
@@ -459,6 +462,7 @@
 			mainGroup = CA2824732751E3EF0097488F;
 			packageReferences = (
 				CAD4850D2757447600F2D941 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CAE622FE277793720029601C /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = CA28247D2751E3EF0097488F /* Products */;
 			projectDirPath = "";
@@ -912,6 +916,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		CAE622FE277793720029601C /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -919,6 +931,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CAD4850D2757447600F2D941 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		CAE622FF277793720029601C /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAE622FE277793720029601C /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

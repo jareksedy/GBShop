@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class CatalogTableViewCell: UITableViewCell {
     @IBOutlet weak var itemNameLabel: UILabel!
@@ -18,10 +19,13 @@ class CatalogTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configure(_ item: CatalogResponse) {
+        itemNameLabel.text = item.productName ?? "Х/З"
+        itemDescriptionLabel.text = item.shortDescription ?? "Х/З"
+        itemPriceLabel.text = "\(item.price ?? 0) ₽"
+        
+        if let picUrl = item.picUrl, let itemUrl = URL(string: picUrl) {
+            itemImage.af.setImage(withURL: itemUrl)
+        }
     }
-
 }
