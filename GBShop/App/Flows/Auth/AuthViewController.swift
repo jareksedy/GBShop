@@ -91,11 +91,6 @@ class AuthViewController: UIViewController {
     }
     
     // MARK: -- Success & Error Messages.
-    private func proceedToWelcomeScreen() {
-        let welcomeScreenViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeScreenViewController") as! WelcomeScreenViewController
-        navigationController?.pushViewController(welcomeScreenViewController, animated: true)
-    }
-    
     private func proceedToCatalog() {
         let catalogTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "CatalogTableViewController") as! CatalogTableViewController
         navigationController?.pushViewController(catalogTableViewController, animated: true)
