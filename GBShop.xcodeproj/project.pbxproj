@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1BC4392778483C0085DCC3 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1BC4382778483C0085DCC3 /* RoundedImageView.swift */; };
 		CA2824802751E3EF0097488F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28247F2751E3EF0097488F /* AppDelegate.swift */; };
 		CA2824822751E3EF0097488F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2824812751E3EF0097488F /* SceneDelegate.swift */; };
 		CA2824892751E3F00097488F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2824882751E3F00097488F /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA1BC4382778483C0085DCC3 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		CA28247C2751E3EF0097488F /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA28247F2751E3EF0097488F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA2824812751E3EF0097488F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA1BC4362778481F0085DCC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4706227782793008F862D /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA1BC4372778482A0085DCC3 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CA51E3C9277246D900CD2FFB /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CA1BC43A2778484D0085DCC3 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				CA1BC4382778483C0085DCC3 /* RoundedImageView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		CA2824732751E3EF0097488F = {
 			isa = PBXGroup;
 			children = (
@@ -257,9 +283,10 @@
 		CAE4C8E52751F93C00D97D2B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CA1BC4362778481F0085DCC3 /* Extensions */,
 				CAD4850A275743C000F2D941 /* Network */,
-				CA51E3C9277246D900CD2FFB /* Logger.swift */,
-				CAC4706227782793008F862D /* Extensions.swift */,
+				CA1BC4372778482A0085DCC3 /* Logger */,
+				CA1BC43A2778484D0085DCC3 /* UIComponents */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -519,6 +546,7 @@
 				CAAD106A276F11CA007990E3 /* SignupSuccessViewController.swift in Sources */,
 				CA2824802751E3EF0097488F /* AppDelegate.swift in Sources */,
 				CAC77AE7276903FC00FCA40C /* Cart.swift in Sources */,
+				CA1BC4392778483C0085DCC3 /* RoundedImageView.swift in Sources */,
 				CA347EDB2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift in Sources */,
 				CA347ED92757DE63001BAEC1 /* ChangeUserDataResult.swift in Sources */,
 				CA8498B62765BD0C00F6EB08 /* CatalogResponse.swift in Sources */,
