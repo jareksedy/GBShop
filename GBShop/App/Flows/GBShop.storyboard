@@ -313,7 +313,7 @@
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mypass" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-oe-2Aa">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-oe-2Aa">
                             <rect key="frame" x="25" y="841" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="Uav-c2-HnO"/>
@@ -379,57 +379,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatalogCell" rowHeight="219" id="Qdx-7M-fEI" customClass="CatalogTableViewCell" customModule="GBShop" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="219"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatalogCell" rowHeight="341" id="Qdx-7M-fEI" customClass="CatalogTableViewCell" customModule="GBShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="341"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qdx-7M-fEI" id="I5k-wk-TB8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="219"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="341"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наименование товара" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90N-Fl-ZMu">
-                                            <rect key="frame" x="25" y="50" width="364" height="38.5"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29 900 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvg-KL-ZU6">
-                                            <rect key="frame" x="25" y="143" width="352" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="lBE-oB-mnU"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Краткое описание нашего расчудесного товара" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-iC-sGB">
-                                            <rect key="frame" x="25" y="98.5" width="364" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DZR-8F-cek" customClass="RoundedImageView" customModule="GBShop" customModuleProvider="target">
-                                            <rect key="frame" x="45" y="36" width="324" height="324"/>
-                                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="DZR-8F-cek" secondAttribute="height" id="NZf-se-PA0"/>
-                                                <constraint firstAttribute="width" constant="200" id="Utu-0O-XKD"/>
-                                            </constraints>
-                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="E0u-j9-9Vs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="341"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bup-pS-p1x">
+                                                    <rect key="frame" x="25" y="25" width="364" height="80"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Наименование товара" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90N-Fl-ZMu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="284" height="80"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DZR-8F-cek" customClass="RoundedImageView" customModule="GBShop" customModuleProvider="target">
+                                                            <rect key="frame" x="284" y="0.0" width="80" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="DZR-8F-cek" secondAttribute="height" id="NZf-se-PA0"/>
+                                                                <constraint firstAttribute="width" constant="80" id="Utu-0O-XKD"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Краткое описание нашего расчудесного товара" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-iC-sGB">
+                                                    <rect key="frame" x="25" y="110" width="364" height="151"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29 900 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvg-KL-ZU6">
+                                                    <rect key="frame" x="25" y="266" width="364" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="lBE-oB-mnU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <edgeInsets key="layoutMargins" top="25" left="25" bottom="25" right="25"/>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="d1X-iC-sGB" firstAttribute="top" secondItem="90N-Fl-ZMu" secondAttribute="bottom" constant="10" id="0TA-Qp-tTN"/>
-                                        <constraint firstAttribute="trailing" secondItem="d1X-iC-sGB" secondAttribute="trailing" constant="25" id="4EB-ke-3rB"/>
-                                        <constraint firstAttribute="trailing" secondItem="90N-Fl-ZMu" secondAttribute="trailing" constant="25" id="5ql-2O-Xie"/>
-                                        <constraint firstItem="uvg-KL-ZU6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d1X-iC-sGB" secondAttribute="bottomMargin" constant="25" id="75Q-2Q-tr1"/>
-                                        <constraint firstItem="DZR-8F-cek" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leadingMargin" constant="25" id="E1Y-ar-6eI"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="DZR-8F-cek" secondAttribute="trailing" constant="25" id="FZz-Ov-cXU"/>
-                                        <constraint firstItem="d1X-iC-sGB" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leading" constant="25" id="MrI-T0-D47"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="uvg-KL-ZU6" secondAttribute="bottom" constant="25" id="YjW-13-d9O"/>
-                                        <constraint firstItem="90N-Fl-ZMu" firstAttribute="top" secondItem="I5k-wk-TB8" secondAttribute="top" constant="50" id="aMa-eK-DhR"/>
-                                        <constraint firstItem="90N-Fl-ZMu" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leading" constant="25" id="irL-Bu-eTF"/>
-                                        <constraint firstItem="DZR-8F-cek" firstAttribute="top" secondItem="I5k-wk-TB8" secondAttribute="topMargin" constant="25" id="n8w-dh-bsD"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="uvg-KL-ZU6" secondAttribute="trailingMargin" constant="25" id="ppU-VD-h1h"/>
-                                        <constraint firstItem="uvg-KL-ZU6" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leading" constant="25" id="vvh-y7-jf5"/>
+                                        <constraint firstItem="E0u-j9-9Vs" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leading" id="EPl-B0-vjF"/>
+                                        <constraint firstAttribute="bottom" secondItem="E0u-j9-9Vs" secondAttribute="bottom" id="P9M-fL-gRT"/>
+                                        <constraint firstAttribute="trailing" secondItem="E0u-j9-9Vs" secondAttribute="trailing" id="fyl-kL-rhk"/>
+                                        <constraint firstItem="E0u-j9-9Vs" firstAttribute="top" secondItem="I5k-wk-TB8" secondAttribute="top" id="ucB-wE-LvP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

@@ -43,7 +43,6 @@
 		CAC77AE7276903FC00FCA40C /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC77AE6276903FC00FCA40C /* Cart.swift */; };
 		CAD23EC1275B3E9A00A7EFE0 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD23EC0275B3E9A00A7EFE0 /* ResponseCodableTests.swift */; };
 		CAD485072757330D00F2D941 /* GBShop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD485062757330D00F2D941 /* GBShop.storyboard */; };
-		CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485082757376F00F2D941 /* GBShopViewController.swift */; };
 		CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */; };
 		CAD4850F2757447600F2D941 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CAD4850E2757447600F2D941 /* Alamofire */; };
 		CAD485112757480200F2D941 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD485102757480100F2D941 /* ErrorParser.swift */; };
@@ -118,7 +117,6 @@
 		CAC77AE6276903FC00FCA40C /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		CAD23EC0275B3E9A00A7EFE0 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
 		CAD485062757330D00F2D941 /* GBShop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GBShop.storyboard; sourceTree = "<group>"; };
-		CAD485082757376F00F2D941 /* GBShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopViewController.swift; sourceTree = "<group>"; };
 		CAD4850B275743F600F2D941 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
 		CAD485102757480100F2D941 /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
 		CAD485122757482300F2D941 /* ResponseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodable.swift; sourceTree = "<group>"; };
@@ -347,7 +345,6 @@
 				CAE622FA277787FF0029601C /* Signup */,
 				CAE622F9277787EE0029601C /* Catalog */,
 				CAE622FC277788180029601C /* EditPersonalData */,
-				CAD485082757376F00F2D941 /* GBShopViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -563,7 +560,6 @@
 				CA97005F276E53130042EE91 /* AuthViewController.swift in Sources */,
 				CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */,
 				CAC77AE32769024900FCA40C /* CartResponse.swift in Sources */,
-				CAD485092757376F00F2D941 /* GBShopViewController.swift in Sources */,
 				CA8498BE2765C80D00F6EB08 /* Reviews.swift in Sources */,
 				CA2824822751E3EF0097488F /* SceneDelegate.swift in Sources */,
 				CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */,
