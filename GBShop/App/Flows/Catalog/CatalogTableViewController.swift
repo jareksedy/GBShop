@@ -43,10 +43,10 @@ class CatalogTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setToolbarHidden(false, animated: false)
-        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.setToolbarHidden(false, animated: true)
+        navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.topItem?.hidesBackButton = true
-        self.navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.isTranslucent = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
