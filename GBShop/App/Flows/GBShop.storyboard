@@ -313,7 +313,7 @@
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-oe-2Aa">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mypass" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-oe-2Aa">
                             <rect key="frame" x="25" y="841" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="Uav-c2-HnO"/>
