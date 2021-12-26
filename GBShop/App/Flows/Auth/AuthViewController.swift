@@ -33,9 +33,6 @@ class AuthViewController: UIViewController {
     }
     
     private func setupControls() {
-//        loginButton.backgroundColor = UIColor.opaqueSeparator
-//        loginButton.isEnabled = false
-        
         [loginTextField, passwordTextField].forEach {
             $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
         }

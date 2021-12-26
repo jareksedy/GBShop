@@ -13,11 +13,6 @@ class CatalogTableViewCell: UITableViewCell {
     @IBOutlet weak var itemDescriptionLabel: UILabel!
     @IBOutlet weak var itemPriceLabel: UILabel!
     @IBOutlet weak var itemPicture: RoundedImageView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
     func configure(_ item: CatalogResponse) {
         itemNameLabel.text = item.productName ?? "Х/З"
