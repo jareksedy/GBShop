@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -275,6 +276,7 @@
                             <constraint firstItem="e4t-1c-SIP" firstAttribute="top" secondItem="rLa-84-6EY" secondAttribute="top" id="Oac-Wt-GFs"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="Daa-z3-wNn"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
@@ -373,13 +375,32 @@
         <scene sceneID="OTZ-Sv-7gQ">
             <objects>
                 <tableViewController storyboardIdentifier="CatalogTableViewController" modalPresentationStyle="fullScreen" id="enn-io-htr" customClass="CatalogTableViewController" customModule="GBShop" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cRe-cr-BZ4">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cRe-cr-BZ4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="3ff-8s-OFM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zWU-04-p3D">
+                                    <rect key="frame" x="25" y="50" width="364" height="25"/>
+                                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="Ml2-Ks-Y5k"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="zWU-04-p3D" firstAttribute="leading" secondItem="3ff-8s-OFM" secondAttribute="leading" constant="25" id="IDJ-En-EaK"/>
+                                <constraint firstItem="zWU-04-p3D" firstAttribute="top" secondItem="3ff-8s-OFM" secondAttribute="top" constant="50" id="agj-dH-7Im"/>
+                                <constraint firstAttribute="trailing" secondItem="zWU-04-p3D" secondAttribute="trailing" constant="25" id="qfu-OF-ffY"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatalogCell" rowHeight="219" id="Qdx-7M-fEI" customClass="CatalogTableViewCell" customModule="GBShop" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="219"/>
+                                <rect key="frame" x="0.0" y="159.5" width="414" height="219"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qdx-7M-fEI" id="I5k-wk-TB8">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="219"/>
@@ -432,6 +453,13 @@
                             <outlet property="delegate" destination="enn-io-htr" id="zfi-x5-dGD"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Мои данные" id="M0s-dV-lGD"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="A7Y-vc-w28"/>
+                        <barButtonItem id="Vdf-Wg-B0H">
+                            <imageReference key="image" image="rectangle.portrait.and.arrow.right" catalog="system" symbolScale="medium"/>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="E0V-dj-8sW"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -843,6 +871,7 @@
     </scenes>
     <resources>
         <image name="logo" width="1064" height="224"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

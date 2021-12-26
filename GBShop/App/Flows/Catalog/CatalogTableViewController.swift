@@ -14,9 +14,13 @@ class CatalogTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.dataSource = self
+        tableView.delegate = self
+        
         tableView.rowHeight = UITableView.automaticDimension
         
         let factory = requestFactory.makeGetCatalogRequestFactory()
+        
         factory.getCatalog(pageNumber: 1, categoryId: 1) { response in
             switch response.result {
             case .success(let result):
@@ -28,11 +32,16 @@ class CatalogTableViewController: UITableViewController {
         }
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//
-//        navigationController?.setNavigationBarHidden(false, animated: true)
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setToolbarHidden(false, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setToolbarHidden(true, animated: true)
+    }
     
     // MARK: - Table view data source
     
