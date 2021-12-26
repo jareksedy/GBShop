@@ -33,9 +33,6 @@ class AuthViewController: UIViewController {
     }
     
     private func setupControls() {
-        loginButton.backgroundColor = UIColor.opaqueSeparator
-        loginButton.isEnabled = false
-        
         [loginTextField, passwordTextField].forEach {
             $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
         }
@@ -91,9 +88,9 @@ class AuthViewController: UIViewController {
     }
     
     // MARK: -- Success & Error Messages.
-    private func proceedToWelcomeScreen() {
-        let welcomeScreenViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeScreenViewController") as! WelcomeScreenViewController
-        navigationController?.pushViewController(welcomeScreenViewController, animated: true)
+    private func proceedToCatalog() {
+        let catalogTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "CatalogTableViewController") as! CatalogTableViewController
+        navigationController?.pushViewController(catalogTableViewController, animated: true)
     }
     
     private func showError(_ errorMessage: String) {
@@ -107,13 +104,16 @@ class AuthViewController: UIViewController {
         let factory = requestFactory.makeAuthRequestFactory()
         let user = User(login: loginTextField.text, password: passwordTextField.text)
         
+        loginButton.backgroundColor = UIColor.opaqueSeparator
+        loginButton.isEnabled = false
+        
         factory.login(user: user) { response in
             DispatchQueue.main.async {
                 logging(LogMessage.funcStart)
                 logging(response)
                 
                 switch response.result {
-                case .success(let success): success.result == 1 ? self.proceedToWelcomeScreen() : self.showError(success.errorMessage ?? "Неизвестная ошибка.")
+                case .success(let success): success.result == 1 ? self.proceedToCatalog() : self.showError(success.errorMessage ?? "Неизвестная ошибка.")
                 case .failure(let error): self.showError(error.localizedDescription)
                 }
                 
