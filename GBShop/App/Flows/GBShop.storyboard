@@ -407,16 +407,27 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DZR-8F-cek" customClass="RoundedImageView" customModule="GBShop" customModuleProvider="target">
+                                            <rect key="frame" x="45" y="36" width="324" height="324"/>
+                                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="DZR-8F-cek" secondAttribute="height" id="NZf-se-PA0"/>
+                                                <constraint firstAttribute="width" constant="200" id="Utu-0O-XKD"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="d1X-iC-sGB" firstAttribute="top" secondItem="90N-Fl-ZMu" secondAttribute="bottom" constant="10" id="0TA-Qp-tTN"/>
                                         <constraint firstAttribute="trailing" secondItem="d1X-iC-sGB" secondAttribute="trailing" constant="25" id="4EB-ke-3rB"/>
                                         <constraint firstAttribute="trailing" secondItem="90N-Fl-ZMu" secondAttribute="trailing" constant="25" id="5ql-2O-Xie"/>
                                         <constraint firstItem="uvg-KL-ZU6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d1X-iC-sGB" secondAttribute="bottomMargin" constant="25" id="75Q-2Q-tr1"/>
+                                        <constraint firstItem="DZR-8F-cek" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leadingMargin" constant="25" id="E1Y-ar-6eI"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="DZR-8F-cek" secondAttribute="trailing" constant="25" id="FZz-Ov-cXU"/>
                                         <constraint firstItem="d1X-iC-sGB" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leading" constant="25" id="MrI-T0-D47"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="uvg-KL-ZU6" secondAttribute="bottom" constant="25" id="YjW-13-d9O"/>
                                         <constraint firstItem="90N-Fl-ZMu" firstAttribute="top" secondItem="I5k-wk-TB8" secondAttribute="top" constant="50" id="aMa-eK-DhR"/>
                                         <constraint firstItem="90N-Fl-ZMu" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leading" constant="25" id="irL-Bu-eTF"/>
+                                        <constraint firstItem="DZR-8F-cek" firstAttribute="top" secondItem="I5k-wk-TB8" secondAttribute="topMargin" constant="25" id="n8w-dh-bsD"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="uvg-KL-ZU6" secondAttribute="trailingMargin" constant="25" id="ppU-VD-h1h"/>
                                         <constraint firstItem="uvg-KL-ZU6" firstAttribute="leading" secondItem="I5k-wk-TB8" secondAttribute="leading" constant="25" id="vvh-y7-jf5"/>
                                     </constraints>
@@ -424,6 +435,7 @@
                                 <connections>
                                     <outlet property="itemDescriptionLabel" destination="d1X-iC-sGB" id="GrN-ai-Hrg"/>
                                     <outlet property="itemNameLabel" destination="90N-Fl-ZMu" id="DKm-T9-LpD"/>
+                                    <outlet property="itemPicture" destination="DZR-8F-cek" id="3hG-8A-HQi"/>
                                     <outlet property="itemPriceLabel" destination="uvg-KL-ZU6" id="PxJ-J2-cqY"/>
                                 </connections>
                             </tableViewCell>

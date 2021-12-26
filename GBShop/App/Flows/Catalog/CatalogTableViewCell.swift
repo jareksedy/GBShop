@@ -12,6 +12,7 @@ class CatalogTableViewCell: UITableViewCell {
     @IBOutlet weak var itemNameLabel: UILabel!
     @IBOutlet weak var itemDescriptionLabel: UILabel!
     @IBOutlet weak var itemPriceLabel: UILabel!
+    @IBOutlet weak var itemPicture: RoundedImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,8 +29,8 @@ class CatalogTableViewCell: UITableViewCell {
         }
         
         
-//        if let picUrl = item.picUrl, let itemUrl = URL(string: picUrl) {
-//            itemImage.af.setImage(withURL: itemUrl)
-//        }
+        if let picUrl = item.picUrl, let itemUrl = URL(string: picUrl) {
+            itemPicture.af.setImage(withURL: itemUrl)
+        }
     }
 }
