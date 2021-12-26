@@ -32,15 +32,23 @@ class CatalogTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func toolBarProfileButtonTapped(_ sender: Any) {
+        let editDataViewController = self.storyboard?.instantiateViewController(withIdentifier: "EditDataViewController") as! EditDataViewController
+        navigationController?.pushViewController(editDataViewController, animated: true)
+    }
+    @IBAction func toolBarLogoutButtonTapped(_ sender: Any) {
+        let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
+        navigationController?.pushViewController(authViewController, animated: true)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         navigationController?.setToolbarHidden(false, animated: false)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.setToolbarHidden(true, animated: true)
+        navigationController?.setToolbarHidden(true, animated: false)
     }
     
     // MARK: - Table view data source

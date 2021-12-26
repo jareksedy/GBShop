@@ -137,8 +137,7 @@ class EditDataViewController: UIViewController {
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        let welcomeScreenViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeScreenViewController") as! WelcomeScreenViewController
-        navigationController?.pushViewController(welcomeScreenViewController, animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     // MARK: -- ViewController methods.
