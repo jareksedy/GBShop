@@ -15,6 +15,7 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var itemNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var itemPic: UIImageView!
+    @IBOutlet weak var itemPriceLabel: UILabel!
     
     let factory = RequestFactory()
     var productId: Int?
@@ -73,6 +74,8 @@ class ItemViewController: UIViewController {
             DispatchQueue.main.async {
                 self.itemNameLabel.text = good.productName
                 self.descriptionLabel.text = good.description
+                if let price = good.price { self.itemPriceLabel.text = "\(price.formattedString) ₽" }
+                
                 
                 if let picUrl = good.picUrl, let goodUrl = URL(string: picUrl) {
                     self.itemPic.af.setImage(withURL: goodUrl)

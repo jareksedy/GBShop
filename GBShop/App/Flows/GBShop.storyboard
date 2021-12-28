@@ -553,6 +553,7 @@
                         <outlet property="descriptionLabel" destination="s9x-Tt-e2y" id="WIL-0N-PEt"/>
                         <outlet property="itemNameLabel" destination="5hS-PM-qAf" id="PaJ-m2-CzV"/>
                         <outlet property="itemPic" destination="BqI-pd-hlp" id="gin-ff-e0k"/>
+                        <outlet property="itemPriceLabel" destination="GTl-5h-BRa" id="ANt-5M-abo"/>
                         <outlet property="itemStackView" destination="7ka-Ig-Fe3" id="ili-49-kME"/>
                         <outlet property="scrollView" destination="vHZ-Ku-TeA" id="ZSZ-bR-C0y"/>
                     </connections>
@@ -578,11 +579,42 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание товара." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9x-Tt-e2y">
-                            <rect key="frame" x="25" y="544" width="364" height="622"/>
+                            <rect key="frame" x="25" y="544" width="364" height="447"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="— руб." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTl-5h-BRa">
+                            <rect key="frame" x="25" y="1016" width="364" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="WKG-nX-epg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-i1-J1h">
+                            <rect key="frame" x="25" y="1091" width="364" height="75"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="G1Z-wE-v8i"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-5" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-25" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="В корзину">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <imageReference key="image" image="cart.fill.badge.plus" catalog="system" symbolScale="small"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="saveDataButtonTapped:" destination="kZc-A1-Hes" eventType="touchUpInside" id="Jr9-Qw-YDc"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="0Pq-4u-U9m"/>
                     <edgeInsets key="layoutMargins" top="50" left="25" bottom="0.0" right="25"/>
@@ -874,6 +906,7 @@
     </scenes>
     <resources>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
+        <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
         <image name="logo" width="1064" height="224"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <systemColor name="opaqueSeparatorColor">
