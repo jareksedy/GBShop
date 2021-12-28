@@ -277,7 +277,6 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Daa-z3-wNn"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="formStackView" destination="cwh-gc-RSg" id="31h-Wj-Tv0"/>
                         <outlet property="loginButton" destination="ViS-Q0-McR" id="tJX-Y2-rP8"/>
@@ -849,10 +848,10 @@
         <!--Войти в магазин-->
         <scene sceneID="AYQ-57-Y3p">
             <objects>
-                <navigationController title="Войти в магазин" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="Ny9-Zz-GX6" sceneMemberID="viewController">
+                <navigationController title="Войти в магазин" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Ny9-Zz-GX6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T82-DN-cPV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
