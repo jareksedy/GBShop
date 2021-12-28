@@ -461,7 +461,7 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="E0V-dj-8sW">
-                        <barButtonItem key="backBarButtonItem" title="backfuck" style="done" id="AFa-O1-38Z">
+                        <barButtonItem key="backBarButtonItem" title="Каталог" style="done" id="AFa-O1-38Z">
                             <color key="tintColor" systemColor="systemIndigoColor"/>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="yqg-Kf-zgR">
@@ -612,6 +612,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sGS-ca-fxW"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bioTextField" destination="ce4-TX-LsS" id="QsZ-5g-8O2"/>
                         <outlet property="cancelButton" destination="Hdb-4P-Yq0" id="0rp-eU-jTJ"/>

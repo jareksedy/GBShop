@@ -42,6 +42,11 @@ class EditDataViewController: UIViewController {
         }
     }
     
+    private func removeNavBar() {
+        navigationController?.navigationItem.hidesBackButton = true
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     private func isFormFilled() -> Bool {
         guard firstNameTextField.text != "",
               lastNameTextField.text != "",
@@ -141,6 +146,12 @@ class EditDataViewController: UIViewController {
     }
     
     // MARK: -- ViewController methods.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        removeNavBar()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -22,7 +22,6 @@ class ItemViewController: UIViewController {
     private func setNavigation() {
         navigationController?.setToolbarHidden(false, animated: true)
         navigationController?.setNavigationBarHidden(false, animated: true)
-        navigationController?.navigationBar.topItem?.hidesBackButton = true
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationItem.hidesBackButton = false
     }
@@ -82,6 +81,5 @@ class ItemViewController: UIViewController {
         }
         
         setConstraints()
-        setNavigation()
     }
 }
