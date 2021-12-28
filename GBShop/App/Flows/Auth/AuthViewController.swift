@@ -32,6 +32,11 @@ class AuthViewController: UIViewController {
         self.formStackView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
     }
     
+    private func removeNavBar() {
+        navigationController?.navigationItem.hidesBackButton = true
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     private func setupControls() {
         [loginTextField, passwordTextField].forEach {
             $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
@@ -129,6 +134,11 @@ class AuthViewController: UIViewController {
     
     
     // MARK: -- ViewController methods.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        removeNavBar()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

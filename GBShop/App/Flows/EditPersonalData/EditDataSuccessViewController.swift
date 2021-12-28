@@ -13,6 +13,11 @@ class EditDataSuccessViewController: UIViewController {
     
     @IBOutlet weak var proceedButton: UIButton!
     
+    private func removeNavBar() {
+        navigationController?.navigationItem.hidesBackButton = true
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     private func setConstraints() {
         self.scrollView.addSubview(formStackView)
         self.formStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -31,6 +36,11 @@ class EditDataSuccessViewController: UIViewController {
     }
     
     // MARK: -- ViewController methods.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        removeNavBar()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

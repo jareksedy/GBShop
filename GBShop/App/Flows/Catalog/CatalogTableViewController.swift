@@ -70,4 +70,24 @@ class CatalogTableViewController: UITableViewController {
         
         return cell ?? UITableViewCell()
     }
+    
+    // MARK: - Navigation
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "toProductPage", sender: cell)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        guard let cell = sender as? CatalogTableViewCell else { return }
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        
+        let itemPage = segue.destination as! ItemViewController
+        itemPage.productId = catalog[indexPath.row].productId
+    }
 }
+
