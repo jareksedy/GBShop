@@ -453,6 +453,10 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="A7Y-vc-w28"/>
+                        <barButtonItem title="Cart" id="405-R7-asr">
+                            <imageReference key="image" image="cart" catalog="system" symbolScale="large"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="xG0-V8-eBa"/>
                         <barButtonItem id="Vdf-Wg-B0H">
                             <imageReference key="image" image="arrowshape.turn.up.right" catalog="system" symbolScale="large"/>
                             <connections>
@@ -522,6 +526,10 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem systemItem="flexibleSpace" id="lln-qW-u9G"/>
+                        <barButtonItem title="Cart" id="Uxf-hK-J43">
+                            <imageReference key="image" image="cart" catalog="system" symbolScale="large"/>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="25P-Y2-Ykg"/>
                         <barButtonItem id="kxl-xt-5ed">
                             <imageReference key="image" image="arrowshape.turn.up.right" catalog="system" symbolScale="large"/>
                             <connections>
@@ -549,6 +557,7 @@
                             </constraints>
                         </view>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="s9x-Tt-e2y" id="WIL-0N-PEt"/>
                         <outlet property="itemNameLabel" destination="5hS-PM-qAf" id="PaJ-m2-CzV"/>
@@ -906,6 +915,7 @@
     </scenes>
     <resources>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
         <image name="logo" width="1064" height="224"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
