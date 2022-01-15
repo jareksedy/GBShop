@@ -448,6 +448,7 @@
                     <toolbarItems>
                         <barButtonItem id="M0s-dV-lGD">
                             <imageReference key="image" image="pencil.circle" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <action selector="toolBarProfileButtonTapped:" destination="enn-io-htr" id="NpT-H9-Kng"/>
                             </connections>
@@ -455,6 +456,7 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="A7Y-vc-w28"/>
                         <barButtonItem title="Cart" id="405-R7-asr">
                             <imageReference key="image" image="cart" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <segue destination="Q4B-3Q-FXL" kind="show" id="YPE-L9-BGZ"/>
                             </connections>
@@ -462,14 +464,15 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="xG0-V8-eBa"/>
                         <barButtonItem id="Vdf-Wg-B0H">
                             <imageReference key="image" image="arrowshape.turn.up.right" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <action selector="toolBarLogoutButtonTapped:" destination="enn-io-htr" id="pzc-3G-Ah1"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="E0V-dj-8sW">
-                        <barButtonItem key="backBarButtonItem" title="Каталог" style="done" id="AFa-O1-38Z">
-                            <color key="tintColor" systemColor="systemIndigoColor"/>
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="AFa-O1-38Z">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="yqg-Kf-zgR">
                             <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
@@ -524,6 +527,7 @@
                     <toolbarItems>
                         <barButtonItem id="pja-Ty-MTp">
                             <imageReference key="image" image="pencil.circle" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <action selector="profileButtonTapped:" destination="fLc-CY-CUL" id="SLX-96-4hO"/>
                             </connections>
@@ -531,19 +535,24 @@
                         <barButtonItem systemItem="flexibleSpace" id="lln-qW-u9G"/>
                         <barButtonItem title="Cart" id="Uxf-hK-J43">
                             <imageReference key="image" image="cart" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
-                                <segue destination="Q4B-3Q-FXL" kind="show" id="ys6-bh-UZe"/>
+                                <segue destination="Q4B-3Q-FXL" kind="show" id="34L-qW-pXz"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem systemItem="flexibleSpace" id="25P-Y2-Ykg"/>
                         <barButtonItem id="kxl-xt-5ed">
                             <imageReference key="image" image="arrowshape.turn.up.right" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
                                 <action selector="logoutButtonTapped:" destination="fLc-CY-CUL" id="ccA-9o-Nf9"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="cIR-OO-OpZ">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="PKy-lv-NET">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                        </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="Xt4-LC-Yz4">
                             <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -660,8 +669,47 @@
                             <outlet property="delegate" destination="Q4B-3Q-FXL" id="xyw-te-kGp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="tKp-8l-DoC"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <toolbarItems>
+                        <barButtonItem id="Td5-uj-TGe">
+                            <imageReference key="image" image="pencil.circle" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <action selector="toolBarProfileButtonTapped:" destination="enn-io-htr" id="Nxf-0N-7FG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="AZD-Ee-SGA"/>
+                        <barButtonItem id="n9T-7y-RwK">
+                            <imageReference key="image" image="arrowshape.turn.up.right" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <action selector="toolBarLogoutButtonTapped:" destination="enn-io-htr" id="xBc-26-SN1"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="8nK-3v-Xny">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="15T-zp-OZK">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="scaleToFill" id="hPs-Cj-f9a">
+                            <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5He-j3-0AY">
+                                    <rect key="frame" x="-532" y="-12.5" width="1064" height="25"/>
+                                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="TpZ-To-weA"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="5He-j3-0AY" firstAttribute="centerX" secondItem="hPs-Cj-f9a" secondAttribute="centerX" id="bTy-id-pkF"/>
+                                <constraint firstItem="5He-j3-0AY" firstAttribute="centerY" secondItem="hPs-Cj-f9a" secondAttribute="centerY" id="fKO-gW-ZgT"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nj2-Kc-NKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -950,7 +998,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YPE-L9-BGZ"/>
+        <segue reference="34L-qW-pXz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
