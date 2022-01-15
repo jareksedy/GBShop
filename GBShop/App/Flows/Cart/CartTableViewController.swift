@@ -42,7 +42,11 @@ class CartTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if AppCart.shared.items.count == 0 {
+            return 1
+        } else {
+            return AppCart.shared.items.count
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,7 +55,9 @@ class CartTableViewController: UITableViewController {
             cell.textLabel?.text = "Корзина пуста"
             return cell
         } else {
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell") as? CartTableViewCell
+            cell?.configure(AppCart.shared.items[indexPath.row])
+            return cell ?? UITableViewCell()
         }
     }
 }

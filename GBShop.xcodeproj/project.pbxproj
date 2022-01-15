@@ -60,6 +60,7 @@
 		CAE622F6277787CB0029601C /* CatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE622F5277787CB0029601C /* CatalogTableViewController.swift */; };
 		CAE622F8277787E70029601C /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE622F7277787E70029601C /* CatalogTableViewCell.swift */; };
 		CAE62300277793720029601C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CAE622FF277793720029601C /* AlamofireImage */; };
+		CAF73B7D279337820091A203 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF73B7C279337820091A203 /* CartTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		CAD4852727576F1500F2D941 /* SignupRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequestFactory.swift; sourceTree = "<group>"; };
 		CAE622F5277787CB0029601C /* CatalogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewController.swift; sourceTree = "<group>"; };
 		CAE622F7277787E70029601C /* CatalogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewCell.swift; sourceTree = "<group>"; };
+		CAF73B7C279337820091A203 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				CA841A6927927AF60026A067 /* CartTableViewController.swift */,
+				CAF73B7C279337820091A203 /* CartTableViewCell.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				CAE622F6277787CB0029601C /* CatalogTableViewController.swift in Sources */,
 				CA875851275BE19600C60E07 /* GetGoodRequestFactory.swift in Sources */,
 				CAC77AE5276902AD00FCA40C /* CartRequestFactory.swift in Sources */,
+				CAF73B7D279337820091A203 /* CartTableViewCell.swift in Sources */,
 				CAC4706327782793008F862D /* Extensions.swift in Sources */,
 				CAD485112757480200F2D941 /* ErrorParser.swift in Sources */,
 				CAD485132757482300F2D941 /* ResponseCodable.swift in Sources */,
