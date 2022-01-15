@@ -76,7 +76,6 @@ class ItemViewController: UIViewController {
                 self.descriptionLabel.text = good.description
                 if let price = good.price { self.itemPriceLabel.text = "\(price.formattedString) ₽" }
                 
-                
                 if let picUrl = good.picUrl, let goodUrl = URL(string: picUrl) {
                     self.itemPic.af.setImage(withURL: goodUrl)
                 }

@@ -20,6 +20,8 @@
 		CA347EDD2757DF3A001BAEC1 /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */; };
 		CA4E26CC276DE931006947A4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E26CB276DE931006947A4 /* SignupViewController.swift */; };
 		CA51E3CA277246D900CD2FFB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51E3C9277246D900CD2FFB /* Logger.swift */; };
+		CA841A6A27927AF60026A067 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA841A6927927AF60026A067 /* CartTableViewController.swift */; };
+		CA841A6D27927D770026A067 /* AppCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA841A6C27927D770026A067 /* AppCart.swift */; };
 		CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */; };
 		CA8498B62765BD0C00F6EB08 /* CatalogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */; };
 		CA8498B82765C07300F6EB08 /* GoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8498B72765C07300F6EB08 /* GoodResponse.swift */; };
@@ -95,6 +97,8 @@
 		CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
 		CA4E26CB276DE931006947A4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		CA51E3C9277246D900CD2FFB /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CA841A6927927AF60026A067 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		CA841A6C27927D770026A067 /* AppCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCart.swift; sourceTree = "<group>"; };
 		CA8498B32765B9E600F6EB08 /* DefaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResponse.swift; sourceTree = "<group>"; };
 		CA8498B52765BD0C00F6EB08 /* CatalogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogResponse.swift; sourceTree = "<group>"; };
 		CA8498B72765C07300F6EB08 /* GoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodResponse.swift; sourceTree = "<group>"; };
@@ -233,6 +237,22 @@
 			path = GBShopUITests;
 			sourceTree = "<group>";
 		};
+		CA841A6827927AD80026A067 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				CA841A6927927AF60026A067 /* CartTableViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		CA841A6B27927D680026A067 /* AppCart */ = {
+			isa = PBXGroup;
+			children = (
+				CA841A6C27927D770026A067 /* AppCart.swift */,
+			);
+			path = AppCart;
+			sourceTree = "<group>";
+		};
 		CAD4850A275743C000F2D941 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +331,7 @@
 		CAE4C8E82751F97200D97D2B /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				CA841A6B27927D680026A067 /* AppCart */,
 				CAD48518275748D000F2D941 /* Network */,
 			);
 			path = BusinessLogic;
@@ -346,6 +367,7 @@
 				CAE622FB2777880C0029601C /* Auth */,
 				CAE622FA277787FF0029601C /* Signup */,
 				CAE622F9277787EE0029601C /* Catalog */,
+				CA841A6827927AD80026A067 /* Cart */,
 				CAE622FC277788180029601C /* EditPersonalData */,
 				CAD18094277A1EEE0053B64D /* ItemViewController.swift */,
 			);
@@ -541,6 +563,7 @@
 				CAC4706327782793008F862D /* Extensions.swift in Sources */,
 				CAD485112757480200F2D941 /* ErrorParser.swift in Sources */,
 				CAD485132757482300F2D941 /* ResponseCodable.swift in Sources */,
+				CA841A6D27927D770026A067 /* AppCart.swift in Sources */,
 				CA970065276E6A0D0042EE91 /* EditDataSuccessViewController.swift in Sources */,
 				CA347ED7275771E2001BAEC1 /* Signup.swift in Sources */,
 				CAAD106A276F11CA007990E3 /* SignupSuccessViewController.swift in Sources */,
@@ -564,6 +587,7 @@
 				CAD18095277A1EEE0053B64D /* ItemViewController.swift in Sources */,
 				CA8498B42765B9E600F6EB08 /* DefaultResponse.swift in Sources */,
 				CAC77AE32769024900FCA40C /* CartResponse.swift in Sources */,
+				CA841A6A27927AF60026A067 /* CartTableViewController.swift in Sources */,
 				CA8498BE2765C80D00F6EB08 /* Reviews.swift in Sources */,
 				CA2824822751E3EF0097488F /* SceneDelegate.swift in Sources */,
 				CAD4850C275743F600F2D941 /* AbstractErrorParser.swift in Sources */,
