@@ -636,7 +636,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="saveDataButtonTapped:" destination="kZc-A1-Hes" eventType="touchUpInside" id="Jr9-Qw-YDc"/>
+                                <action selector="addToCartButtonTapped:" destination="fLc-CY-CUL" eventType="touchUpInside" id="Wp6-v1-whZ"/>
                             </connections>
                         </button>
                     </subviews>
