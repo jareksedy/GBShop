@@ -57,7 +57,8 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func logoutButtonTapped(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
+        let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
+        navigationController?.pushViewController(authViewController, animated: true)
     }
     
     
