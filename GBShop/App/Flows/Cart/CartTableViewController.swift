@@ -23,10 +23,18 @@ class CartTableViewController: UITableViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-//        navigationController?.setToolbarHidden(true, animated: false)
-//        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
+    @IBAction func toolbarProfileButtonTapped(_ sender: Any) {
+        let editDataViewController = self.storyboard?.instantiateViewController(withIdentifier: "EditDataViewController") as! EditDataViewController
+        navigationController?.pushViewController(editDataViewController, animated: true)
+    }
+    
+    @IBAction func toolbarLogoutButtonTapped(_ sender: Any) {
+        let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
+        navigationController?.pushViewController(authViewController, animated: true)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

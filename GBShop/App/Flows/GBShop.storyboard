@@ -674,7 +674,7 @@
                             <imageReference key="image" image="slider.vertical.3" catalog="system" symbolScale="large"/>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
-                                <action selector="toolBarProfileButtonTapped:" destination="enn-io-htr" id="Nxf-0N-7FG"/>
+                                <action selector="toolbarProfileButtonTapped:" destination="Q4B-3Q-FXL" id="T2m-Vs-g4Q"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="AZD-Ee-SGA"/>
@@ -682,7 +682,7 @@
                             <imageReference key="image" image="lock.slash" catalog="system" symbolScale="large"/>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
-                                <action selector="toolBarLogoutButtonTapped:" destination="enn-io-htr" id="xBc-26-SN1"/>
+                                <action selector="toolbarLogoutButtonTapped:" destination="Q4B-3Q-FXL" id="X2y-7T-275"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
