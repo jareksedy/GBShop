@@ -27,7 +27,8 @@ extension CartTableViewController: CartDelegate {
 }
 
 class CartTableViewController: UITableViewController {
-
+    @IBOutlet weak var totalLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -49,6 +50,15 @@ class CartTableViewController: UITableViewController {
         navigationController?.pushViewController(editDataViewController, animated: true)
     }
     
+    @IBAction func checkOutButtonTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Корзина", message: "Спасибо за покупку!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: {
+            AppCart.shared.items = []
+            self.tableView.reloadData()
+        })
+    }
+    
     @IBAction func toolbarLogoutButtonTapped(_ sender: Any) {
         let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
         navigationController?.pushViewController(authViewController, animated: true)
@@ -64,6 +74,7 @@ class CartTableViewController: UITableViewController {
         if AppCart.shared.items.count == 0 {
             return 1
         } else {
+            totalLabel.text = "\(AppCart.shared.items.count) товаров на сумму \(AppCart.shared.items.map{ $0.price! }.reduce(0, +).formattedString) ₽"
             return AppCart.shared.items.count
         }
     }
@@ -72,6 +83,7 @@ class CartTableViewController: UITableViewController {
         if AppCart.shared.items.count == 0 {
             let cell = UITableViewCell()
             cell.textLabel?.text = "Корзина пуста"
+            self.tableView.tableFooterView = nil
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell") as? CartTableViewCell
