@@ -19,6 +19,7 @@ class ItemViewController: UIViewController {
     
     let factory = RequestFactory()
     var productId: Int?
+    var product: GoodResponse?
     
     private func setNavigation() {
         navigationController?.setToolbarHidden(false, animated: true)
@@ -39,6 +40,12 @@ class ItemViewController: UIViewController {
         self.itemStackView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
     }
     
+    private func showAddToCartSuccessAlert() {
+        let alert = UIAlertController(title: "Корзина", message: "Товар успешно добавлен в корзину.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     private func getItem(completionHandler: @escaping (GoodResponse) -> Void) {
         guard let productId = productId else { return }
         let goodFactory = factory.makeGetGoodRequestFactory()
@@ -57,13 +64,29 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func logoutButtonTapped(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
+        let authViewController = self.storyboard?.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
+        navigationController?.pushViewController(authViewController, animated: true)
     }
     
+    @IBAction func addToCartButtonTapped(_ sender: Any) {
+        guard let product = product else { return }
+        let cartFactory = factory.makeCartRequestFactory()
+        let request = CartRequest(productId: product.productId, quantity: 1)
+        cartFactory.addToCart(cart: request) { response in
+            switch response.result {
+            case .success:
+                DispatchQueue.main.async {
+                    let item = AppCartItem(productId: product.productId, productName: product.productName, price: product.price, picUrl: product.picUrl)
+                    AppCart.shared.items.append(item)
+                    self.showAddToCartSuccessAlert()
+                }
+            case .failure(let error): print(error.localizedDescription)
+            }
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         setNavigation()
     }
     
@@ -72,10 +95,10 @@ class ItemViewController: UIViewController {
         
         getItem { good in
             DispatchQueue.main.async {
+                self.product = good
                 self.itemNameLabel.text = good.productName
                 self.descriptionLabel.text = good.description
                 if let price = good.price { self.itemPriceLabel.text = "\(price.formattedString) ₽" }
-                
                 
                 if let picUrl = good.picUrl, let goodUrl = URL(string: picUrl) {
                     self.itemPic.af.setImage(withURL: goodUrl)

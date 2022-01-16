@@ -16,6 +16,8 @@ class EditDataSuccessViewController: UIViewController {
     private func removeNavBar() {
         navigationController?.navigationItem.hidesBackButton = true
         navigationController?.isNavigationBarHidden = true
+        navigationController?.setToolbarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     private func setConstraints() {
