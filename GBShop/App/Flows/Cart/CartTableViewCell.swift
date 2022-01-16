@@ -13,6 +13,14 @@ class CartTableViewCell: UITableViewCell {
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var productImage: RoundedImageView!
     
+    var delegate: CartDelegate?
+    var row: Int?
+    
+    @IBAction func deleteButtonTapped(_ sender: Any) {
+        guard let row = row else { return }
+        delegate?.deleteItem(row)
+    }
+    
     func configure(_ item: AppCartItem) {
         productName.text = item.productName
         productPrice.text = "\(item.price?.formattedString ?? "—") ₽"

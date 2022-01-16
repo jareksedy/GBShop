@@ -7,6 +7,25 @@
 
 import UIKit
 
+protocol CartDelegate {
+    func deleteItem(_ index: Int)
+}
+
+extension CartTableViewController: CartDelegate {
+    func deleteItem(_ index: Int) {
+        guard let itemName = AppCart.shared.items[index].productName else { return }
+        let alert = UIAlertController(title: "Корзина", message: "Вы действительно хотите удалить \(itemName) из корзины?", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Да", style: .destructive, handler: { _ in
+            AppCart.shared.items.remove(at: index)
+            self.tableView.reloadData()
+        }))
+    
+        alert.addAction(UIAlertAction(title: "Нет", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+}
+
 class CartTableViewController: UITableViewController {
 
     override func viewDidLoad() {
@@ -57,6 +76,9 @@ class CartTableViewController: UITableViewController {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CartCell") as? CartTableViewCell
             cell?.configure(AppCart.shared.items[indexPath.row])
+            cell?.delegate = self
+            cell?.row = indexPath.row
+            
             return cell ?? UITableViewCell()
         }
     }

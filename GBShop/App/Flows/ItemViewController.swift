@@ -70,10 +70,8 @@ class ItemViewController: UIViewController {
     
     @IBAction func addToCartButtonTapped(_ sender: Any) {
         guard let product = product else { return }
-
         let item = AppCartItem(productId: product.productId, productName: product.productName, price: product.price, picUrl: product.picUrl)
         AppCart.shared.items.append(item)
-        
         showAddToCartSuccessAlert()
     }
     
