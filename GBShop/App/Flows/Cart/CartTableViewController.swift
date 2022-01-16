@@ -14,20 +14,32 @@ protocol CartDelegate {
 extension CartTableViewController: CartDelegate {
     func deleteItem(_ index: Int) {
         guard let itemName = AppCart.shared.items[index].productName else { return }
+        let cartFactory = factory.makeCartRequestFactory()
+        let request = CartRequest(productId: index)
         let alert = UIAlertController(title: "Корзина", message: "Вы действительно хотите удалить \(itemName) из корзины?", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Да", style: .destructive, handler: { _ in
             AppCart.shared.items.remove(at: index)
             self.tableView.reloadData()
         }))
-    
         alert.addAction(UIAlertAction(title: "Нет", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        
+        cartFactory.deleteFromCart(cart: request) { response in
+            switch response.result {
+            case .success:
+                DispatchQueue.main.async {
+                    self.present(alert, animated: true, completion: nil)
+                }
+            case .failure(let error): print(error.localizedDescription)
+            }
+        }
     }
 }
 
 class CartTableViewController: UITableViewController {
     @IBOutlet weak var totalLabel: UILabel!
+    
+    let factory = RequestFactory()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,12 +63,23 @@ class CartTableViewController: UITableViewController {
     }
     
     @IBAction func checkOutButtonTapped(_ sender: Any) {
+        let cartFactory = factory.makeCartRequestFactory()
+        let user = User(id: 123)
         let alert = UIAlertController(title: "Корзина", message: "Спасибо за покупку!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: {
-            AppCart.shared.items = []
-            self.tableView.reloadData()
-        })
+        
+        cartFactory.payCart(user: user) { response in
+            switch response.result {
+            case .success:
+                DispatchQueue.main.async {
+                    self.present(alert, animated: true, completion: {
+                        AppCart.shared.items = []
+                        self.tableView.reloadData()
+                    })
+                }
+            case .failure(let error): print(error.localizedDescription)
+            }
+        }
     }
     
     @IBAction func toolbarLogoutButtonTapped(_ sender: Any) {

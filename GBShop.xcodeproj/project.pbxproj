@@ -193,6 +193,7 @@
 		CA2824732751E3EF0097488F = {
 			isa = PBXGroup;
 			children = (
+				CA28247F2751E3EF0097488F /* AppDelegate.swift */,
 				CA28247E2751E3EF0097488F /* GBShop */,
 				CA2824952751E3F00097488F /* GBShopTests */,
 				CA28249F2751E3F00097488F /* GBShopUITests */,
@@ -293,7 +294,6 @@
 		CAE4C8E42751F92A00D97D2B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				CA28247F2751E3EF0097488F /* AppDelegate.swift */,
 				CA2824812751E3EF0097488F /* SceneDelegate.swift */,
 				CAE4C8E82751F97200D97D2B /* BusinessLogic */,
 				CAE4C8E92751F97E00D97D2B /* Entity */,

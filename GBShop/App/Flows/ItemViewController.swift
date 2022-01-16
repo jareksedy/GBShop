@@ -70,14 +70,23 @@ class ItemViewController: UIViewController {
     
     @IBAction func addToCartButtonTapped(_ sender: Any) {
         guard let product = product else { return }
-        let item = AppCartItem(productId: product.productId, productName: product.productName, price: product.price, picUrl: product.picUrl)
-        AppCart.shared.items.append(item)
-        showAddToCartSuccessAlert()
+        let cartFactory = factory.makeCartRequestFactory()
+        let request = CartRequest(productId: product.productId, quantity: 1)
+        cartFactory.addToCart(cart: request) { response in
+            switch response.result {
+            case .success:
+                DispatchQueue.main.async {
+                    let item = AppCartItem(productId: product.productId, productName: product.productName, price: product.price, picUrl: product.picUrl)
+                    AppCart.shared.items.append(item)
+                    self.showAddToCartSuccessAlert()
+                }
+            case .failure(let error): print(error.localizedDescription)
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         setNavigation()
     }
     
