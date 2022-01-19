@@ -132,6 +132,10 @@ class AuthViewController: UIViewController {
         self.present(signupViewController, animated: true, completion: nil)
     }
     
+    @IBAction func crashButtonTapped(_ sender: Any) {
+        let numbers: [Int] = []
+        let _ = numbers[1]
+    }
     
     // MARK: -- ViewController methods.
     override func viewWillAppear(_ animated: Bool) {

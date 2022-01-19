@@ -299,13 +299,13 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти в магазин" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-At-BAk">
-                            <rect key="frame" x="25" y="144" width="364" height="572"/>
+                            <rect key="frame" x="25" y="144" width="364" height="522"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jareksedy" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Xm-IM-wUL">
-                            <rect key="frame" x="25" y="741" width="364" height="75"/>
+                            <rect key="frame" x="25" y="691" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="rSy-TM-X4V"/>
                             </constraints>
@@ -313,7 +313,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mypass" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-oe-2Aa">
-                            <rect key="frame" x="25" y="841" width="364" height="75"/>
+                            <rect key="frame" x="25" y="791" width="364" height="75"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="Uav-c2-HnO"/>
                             </constraints>
@@ -321,7 +321,7 @@
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-Q0-McR">
-                            <rect key="frame" x="25" y="941" width="364" height="75"/>
+                            <rect key="frame" x="25" y="891" width="364" height="75"/>
                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="nS6-68-hAE"/>
@@ -341,7 +341,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtl-M9-Wq5">
-                            <rect key="frame" x="25" y="1041" width="364" height="25"/>
+                            <rect key="frame" x="25" y="991" width="364" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="dOy-9Y-iq5"/>
                             </constraints>
@@ -349,8 +349,20 @@
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Зарегистрироваться"/>
                             <connections>
-                                <action selector="clearButtonTapped:" destination="399-9T-zhE" eventType="touchUpInside" id="ITQ-bq-l76"/>
                                 <action selector="signupButtonTapped:" destination="Ph6-YE-ngi" eventType="touchUpInside" id="rnu-dW-ajk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6G-NC-pU9">
+                            <rect key="frame" x="25" y="1041" width="364" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="x1B-BJ-y56"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Crash App"/>
+                            <connections>
+                                <action selector="crashButtonTapped:" destination="Ph6-YE-ngi" eventType="touchUpInside" id="reI-dr-H9q"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подсказка: попробуйте войти с логином jareksedy и паролем mypass." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6y-Eo-k11">
@@ -1129,6 +1141,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
