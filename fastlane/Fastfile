@@ -18,15 +18,12 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :custom_lane do
+
     # checkout release branch
     ensure_git_status_clean
 
     # clear data
     clear_derived_data
-    xcclean(
-	scheme: "GBShop",
-	workspace: "GBShop.xcworkspace"
-    )
 
   end
 end
