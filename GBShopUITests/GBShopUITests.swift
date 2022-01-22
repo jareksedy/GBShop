@@ -62,12 +62,12 @@ class GBShopUITests: XCTestCase {
         scrollViewsQuery.otherElements.firstMatch.swipeUp()
         scrollViewsQuery.otherElements.buttons["В корзину"].tap()
         
-        app.alerts["Корзина"].scrollViews.otherElements.buttons["Окей"].tap()
+        app.alerts["cart_alert"].scrollViews.otherElements.buttons["ok_button"].tap()
 
         app.navigationBars["Войти в магазин"].buttons["Cart"].tap()
         tablesQuery.buttons["Оформить покупку"].tap()
         
-        app.alerts["Корзина"].scrollViews.otherElements.buttons["Окей"].tap()
+        app.alerts["cart_alert"].scrollViews.otherElements.buttons["ok_button"].tap()
         
         XCTAssert(tablesQuery.staticTexts["Корзина пуста"].waitForExistence(timeout: 2.0))
     }
