@@ -42,7 +42,9 @@ class ItemViewController: UIViewController {
     
     private func showAddToCartSuccessAlert() {
         let alert = UIAlertController(title: "Корзина", message: "Товар успешно добавлен в корзину.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        let action = UIAlertAction(title: "Окей", style: .default, handler: nil)
+        action.accessibilityIdentifier = "ok_button"
+        alert.addAction(action)
         alert.view.accessibilityIdentifier = "cart_alert"
         alert.view.accessibilityValue = "Item was added to cart."
         self.present(alert, animated: true, completion: nil)

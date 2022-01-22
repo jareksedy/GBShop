@@ -69,7 +69,9 @@ class CartTableViewController: UITableViewController {
         let alert = UIAlertController(title: "Корзина", message: "Спасибо за покупку!", preferredStyle: .alert)
         alert.view.accessibilityIdentifier = "cart_alert"
         alert.view.accessibilityValue = "All items were paid."
-        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        let action = UIAlertAction(title: "Окей", style: .default, handler: nil)
+        action.accessibilityIdentifier = "ok_button"
+        alert.addAction(action)
         
         cartFactory.payCart(user: user) { response in
             switch response.result {
