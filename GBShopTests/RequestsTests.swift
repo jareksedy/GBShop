@@ -20,8 +20,8 @@ class RequestsTests: XCTestCase {
     override func setUpWithError() throws {
         try? super.setUpWithError()
         requestFactory = RequestFactory()
-        user = User(login: "SomebodyElse",
-                    password: "mypassword",
+        user = User(login: "jareksedy",
+                    password: "mypass",
                     email: "janedoe@gmail.com",
                     gender: "f",
                     creditCard: "2344-4324-2344-1233-1234",
