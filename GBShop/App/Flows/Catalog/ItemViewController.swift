@@ -91,6 +91,7 @@ class ItemViewController: UIViewController {
                 DispatchQueue.main.async {
                     let item = AppCartItem(productId: product.productId, productName: product.productName, price: product.price, picUrl: product.picUrl)
                     AppCart.shared.items.append(item)
+                    GALogger.logEvent(name: "Add to cart", key: "result", value: "success")
                     self.showAddToCartSuccessAlert()
                 }
             case .failure(let error): print(error.localizedDescription)
@@ -112,6 +113,8 @@ class ItemViewController: UIViewController {
                 self.itemNameLabel.text = good.productName
                 self.descriptionLabel.text = good.description
                 if let price = good.price { self.itemPriceLabel.text = "\(price.formattedString) ₽" }
+                
+                GALogger.logEvent(name: "Item view", key: "item", value: self.product?.productName ?? "unknown")
                 
                 if let picUrl = good.picUrl, let goodUrl = URL(string: picUrl) {
                     self.itemPic.af.setImage(withURL: goodUrl)

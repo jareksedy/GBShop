@@ -49,6 +49,8 @@ class CartTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GALogger.logEvent(name: "view_cart", key: "result", value: "success")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -84,6 +86,7 @@ class CartTableViewController: UITableViewController {
                 DispatchQueue.main.async {
                     self.present(alert, animated: true, completion: {
                         AppCart.shared.items = []
+                        GALogger.logEvent(name: "checkout_progress", key: "result", value: "success")
                         self.tableView.reloadData()
                     })
                 }

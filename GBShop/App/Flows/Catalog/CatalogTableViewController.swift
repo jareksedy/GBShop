@@ -14,6 +14,7 @@ class CatalogTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        GALogger.logEvent(name: "catalog_view", key: "result", value: "success")
         
         tableView.dataSource = self
         tableView.delegate = self

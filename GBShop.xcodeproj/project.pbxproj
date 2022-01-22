@@ -21,6 +21,7 @@
 		CA36367C2798521D000D4F6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA36367B2798521D000D4F6F /* GoogleService-Info.plist */; };
 		CA36367F27985B86000D4F6F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CA36367E27985B86000D4F6F /* FirebaseAnalytics */; };
 		CA36368127985B87000D4F6F /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CA36368027985B87000D4F6F /* FirebaseCrashlytics */; };
+		CA3BEE6E279BD7A5007DD1AA /* GALogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BEE6D279BD7A5007DD1AA /* GALogger.swift */; };
 		CA4E26CC276DE931006947A4 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E26CB276DE931006947A4 /* SignupViewController.swift */; };
 		CA51E3CA277246D900CD2FFB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51E3C9277246D900CD2FFB /* Logger.swift */; };
 		CA841A6A27927AF60026A067 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA841A6927927AF60026A067 /* CartTableViewController.swift */; };
@@ -100,6 +101,7 @@
 		CA347EDA2757DEDE001BAEC1 /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
 		CA347EDC2757DF3A001BAEC1 /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
 		CA36367B2798521D000D4F6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA3BEE6D279BD7A5007DD1AA /* GALogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GALogger.swift; sourceTree = "<group>"; };
 		CA4E26CB276DE931006947A4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		CA51E3C9277246D900CD2FFB /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		CA841A6927927AF60026A067 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +248,14 @@
 			path = GBShopUITests;
 			sourceTree = "<group>";
 		};
+		CA3BEE6F279BD7A9007DD1AA /* GALogger */ = {
+			isa = PBXGroup;
+			children = (
+				CA3BEE6D279BD7A5007DD1AA /* GALogger.swift */,
+			);
+			path = GALogger;
+			sourceTree = "<group>";
+		};
 		CA841A6827927AD80026A067 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +326,7 @@
 				CAD4850A275743C000F2D941 /* Network */,
 				CA1BC4372778482A0085DCC3 /* Logger */,
 				CA1BC43A2778484D0085DCC3 /* UIComponents */,
+				CA3BEE6F279BD7A9007DD1AA /* GALogger */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -616,6 +627,7 @@
 				CAD4851C2757494100F2D941 /* Auth.swift in Sources */,
 				CAD4851A2757492200F2D941 /* AuthRequestFactory.swift in Sources */,
 				CA875853275BE1E500C60E07 /* GetCatalog.swift in Sources */,
+				CA3BEE6E279BD7A5007DD1AA /* GALogger.swift in Sources */,
 				CA970061276E5B390042EE91 /* EditDataViewController.swift in Sources */,
 				CAD4852827576F1500F2D941 /* SignupRequestFactory.swift in Sources */,
 				CA8498C02765CC7200F6EB08 /* ReviewRequest.swift in Sources */,
