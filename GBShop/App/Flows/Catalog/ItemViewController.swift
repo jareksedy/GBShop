@@ -7,6 +7,7 @@
 
 import UIKit
 import AlamofireImage
+import FirebaseCrashlytics
 
 class ItemViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -42,12 +43,20 @@ class ItemViewController: UIViewController {
     
     private func showAddToCartSuccessAlert() {
         let alert = UIAlertController(title: "Корзина", message: "Товар успешно добавлен в корзину.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        let action = UIAlertAction(title: "Окей", style: .default, handler: nil)
+        action.accessibilityIdentifier = "ok_button"
+        alert.addAction(action)
+        alert.view.accessibilityIdentifier = "cart_alert"
+        alert.view.accessibilityValue = "Item was added to cart."
         self.present(alert, animated: true, completion: nil)
     }
     
     private func getItem(completionHandler: @escaping (GoodResponse) -> Void) {
-        guard let productId = productId else { return }
+        guard let productId = productId else {
+            Crashlytics.crashlytics().log("productId is nil!")
+            return
+        }
+        
         let goodFactory = factory.makeGetGoodRequestFactory()
 
         goodFactory.getGood(productId: productId) { response in
@@ -69,7 +78,11 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func addToCartButtonTapped(_ sender: Any) {
-        guard let product = product else { return }
+        guard let product = product else {
+            Crashlytics.crashlytics().log("Product is nil!")
+            return
+        }
+        
         let cartFactory = factory.makeCartRequestFactory()
         let request = CartRequest(productId: product.productId, quantity: 1)
         cartFactory.addToCart(cart: request) { response in
@@ -78,6 +91,7 @@ class ItemViewController: UIViewController {
                 DispatchQueue.main.async {
                     let item = AppCartItem(productId: product.productId, productName: product.productName, price: product.price, picUrl: product.picUrl)
                     AppCart.shared.items.append(item)
+                    GALogger.logEvent(name: "Add to cart", key: "result", value: "success")
                     self.showAddToCartSuccessAlert()
                 }
             case .failure(let error): print(error.localizedDescription)
@@ -99,6 +113,8 @@ class ItemViewController: UIViewController {
                 self.itemNameLabel.text = good.productName
                 self.descriptionLabel.text = good.description
                 if let price = good.price { self.itemPriceLabel.text = "\(price.formattedString) ₽" }
+                
+                GALogger.logEvent(name: "Item view", key: "item", value: self.product?.productName ?? "unknown")
                 
                 if let picUrl = good.picUrl, let goodUrl = URL(string: picUrl) {
                     self.itemPic.af.setImage(withURL: goodUrl)

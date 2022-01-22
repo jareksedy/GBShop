@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCrashlytics
 
 protocol CartDelegate {
     func deleteItem(_ index: Int)
@@ -13,11 +14,16 @@ protocol CartDelegate {
 
 extension CartTableViewController: CartDelegate {
     func deleteItem(_ index: Int) {
-        guard let itemName = AppCart.shared.items[index].productName else { return }
+        guard let itemName = AppCart.shared.items[index].productName else {
+            Crashlytics.crashlytics().log("itemName is nil!")
+            return
+        }
+        
         let cartFactory = factory.makeCartRequestFactory()
         let request = CartRequest(productId: index)
         let alert = UIAlertController(title: "Корзина", message: "Вы действительно хотите удалить \(itemName) из корзины?", preferredStyle: .alert)
-        
+        alert.view.accessibilityIdentifier = "cart_alert"
+        alert.view.accessibilityValue = "Do you want to remove the item from cart?"
         alert.addAction(UIAlertAction(title: "Да", style: .destructive, handler: { _ in
             AppCart.shared.items.remove(at: index)
             self.tableView.reloadData()
@@ -43,6 +49,8 @@ class CartTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GALogger.logEvent(name: "view_cart", key: "result", value: "success")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,7 +74,11 @@ class CartTableViewController: UITableViewController {
         let cartFactory = factory.makeCartRequestFactory()
         let user = User(id: 123)
         let alert = UIAlertController(title: "Корзина", message: "Спасибо за покупку!", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
+        alert.view.accessibilityIdentifier = "cart_alert"
+        alert.view.accessibilityValue = "All items were paid."
+        let action = UIAlertAction(title: "Окей", style: .default, handler: nil)
+        action.accessibilityIdentifier = "ok_button"
+        alert.addAction(action)
         
         cartFactory.payCart(user: user) { response in
             switch response.result {
@@ -74,6 +86,7 @@ class CartTableViewController: UITableViewController {
                 DispatchQueue.main.async {
                     self.present(alert, animated: true, completion: {
                         AppCart.shared.items = []
+                        GALogger.logEvent(name: "checkout_progress", key: "result", value: "success")
                         self.tableView.reloadData()
                     })
                 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import FirebaseCrashlytics
 
 class AuthViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -65,7 +66,10 @@ class AuthViewController: UIViewController {
     
     // MARK: -- Selectors.
     @objc func keyboardWillShow(notification: NSNotification) {
-        guard let userInfo = notification.userInfo else { return }
+        guard let userInfo = notification.userInfo else {
+            Crashlytics.crashlytics().log("userInfo is nil!")
+            return
+        }
         
         var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         var contentInset: UIEdgeInsets = self.scrollView.contentInset
@@ -94,11 +98,15 @@ class AuthViewController: UIViewController {
     
     // MARK: -- Success & Error Messages.
     private func proceedToCatalog() {
+        GALogger.logEvent(name: "login", key: "result", value: "success")
+        
         let catalogTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "CatalogTableViewController") as! CatalogTableViewController
         navigationController?.pushViewController(catalogTableViewController, animated: true)
     }
     
     private func showError(_ errorMessage: String) {
+        GALogger.logEvent(name: "login", key: "result", value: "failure")
+        
         let alert = UIAlertController(title: "Ошибка авторизации", message: errorMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
@@ -132,6 +140,10 @@ class AuthViewController: UIViewController {
         self.present(signupViewController, animated: true, completion: nil)
     }
     
+    @IBAction func crashButtonTapped(_ sender: Any) {
+        let numbers: [Int] = []
+        let _ = numbers[1]
+    }
     
     // MARK: -- ViewController methods.
     override func viewWillAppear(_ animated: Bool) {
