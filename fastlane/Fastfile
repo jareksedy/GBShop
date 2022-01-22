@@ -23,7 +23,10 @@ platform :ios do
     ensure_git_status_clean
 
     # clear data
-    clear_derived_data
+    # clear_derived_data
+
+    # run tests
+    run_tests
 
   end
 end
