@@ -379,7 +379,6 @@
 				CAE622F9277787EE0029601C /* Catalog */,
 				CA841A6827927AD80026A067 /* Cart */,
 				CAE622FC277788180029601C /* EditPersonalData */,
-				CAD18094277A1EEE0053B64D /* ItemViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -389,6 +388,7 @@
 			children = (
 				CAE622F5277787CB0029601C /* CatalogTableViewController.swift */,
 				CAE622F7277787E70029601C /* CatalogTableViewCell.swift */,
+				CAD18094277A1EEE0053B64D /* ItemViewController.swift */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";

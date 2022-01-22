@@ -17,7 +17,8 @@ extension CartTableViewController: CartDelegate {
         let cartFactory = factory.makeCartRequestFactory()
         let request = CartRequest(productId: index)
         let alert = UIAlertController(title: "Корзина", message: "Вы действительно хотите удалить \(itemName) из корзины?", preferredStyle: .alert)
-        
+        alert.view.accessibilityIdentifier = "cart_alert"
+        alert.view.accessibilityValue = "Do you want to remove the item from cart?"
         alert.addAction(UIAlertAction(title: "Да", style: .destructive, handler: { _ in
             AppCart.shared.items.remove(at: index)
             self.tableView.reloadData()
@@ -66,6 +67,8 @@ class CartTableViewController: UITableViewController {
         let cartFactory = factory.makeCartRequestFactory()
         let user = User(id: 123)
         let alert = UIAlertController(title: "Корзина", message: "Спасибо за покупку!", preferredStyle: .alert)
+        alert.view.accessibilityIdentifier = "cart_alert"
+        alert.view.accessibilityValue = "All items were paid."
         alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
         
         cartFactory.payCart(user: user) { response in
