@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import FirebaseCrashlytics
 
 class AuthViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -65,7 +66,10 @@ class AuthViewController: UIViewController {
     
     // MARK: -- Selectors.
     @objc func keyboardWillShow(notification: NSNotification) {
-        guard let userInfo = notification.userInfo else { return }
+        guard let userInfo = notification.userInfo else {
+            Crashlytics.crashlytics().log("userInfo is nil!")
+            return
+        }
         
         var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         var contentInset: UIEdgeInsets = self.scrollView.contentInset

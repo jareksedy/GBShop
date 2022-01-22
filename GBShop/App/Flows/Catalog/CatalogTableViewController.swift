@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCrashlytics
 
 class CatalogTableViewController: UITableViewController {
     let requestFactory = RequestFactory()
@@ -83,8 +84,15 @@ class CatalogTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
-        guard let cell = sender as? CatalogTableViewCell else { return }
-        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        guard let cell = sender as? CatalogTableViewCell else {
+            Crashlytics.crashlytics().log("Catalog Table View Cell is Nil!")
+            return
+        }
+        
+        guard let indexPath = tableView.indexPath(for: cell) else {
+            Crashlytics.crashlytics().log("indexPath for cell is nil!")
+            return
+        }
         
         let itemPage = segue.destination as! ItemViewController
         itemPage.productId = catalog[indexPath.row].productId

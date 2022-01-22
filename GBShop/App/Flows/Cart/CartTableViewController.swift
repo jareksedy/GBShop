@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCrashlytics
 
 protocol CartDelegate {
     func deleteItem(_ index: Int)
@@ -13,7 +14,11 @@ protocol CartDelegate {
 
 extension CartTableViewController: CartDelegate {
     func deleteItem(_ index: Int) {
-        guard let itemName = AppCart.shared.items[index].productName else { return }
+        guard let itemName = AppCart.shared.items[index].productName else {
+            Crashlytics.crashlytics().log("itemName is nil!")
+            return
+        }
+        
         let cartFactory = factory.makeCartRequestFactory()
         let request = CartRequest(productId: index)
         let alert = UIAlertController(title: "Корзина", message: "Вы действительно хотите удалить \(itemName) из корзины?", preferredStyle: .alert)

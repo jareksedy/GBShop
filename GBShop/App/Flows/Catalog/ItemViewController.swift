@@ -7,6 +7,7 @@
 
 import UIKit
 import AlamofireImage
+import FirebaseCrashlytics
 
 class ItemViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
@@ -51,7 +52,11 @@ class ItemViewController: UIViewController {
     }
     
     private func getItem(completionHandler: @escaping (GoodResponse) -> Void) {
-        guard let productId = productId else { return }
+        guard let productId = productId else {
+            Crashlytics.crashlytics().log("productId is nil!")
+            return
+        }
+        
         let goodFactory = factory.makeGetGoodRequestFactory()
 
         goodFactory.getGood(productId: productId) { response in
@@ -73,7 +78,11 @@ class ItemViewController: UIViewController {
     }
     
     @IBAction func addToCartButtonTapped(_ sender: Any) {
-        guard let product = product else { return }
+        guard let product = product else {
+            Crashlytics.crashlytics().log("Product is nil!")
+            return
+        }
+        
         let cartFactory = factory.makeCartRequestFactory()
         let request = CartRequest(productId: product.productId, quantity: 1)
         cartFactory.addToCart(cart: request) { response in
